@@ -25,7 +25,7 @@ namespace WebApplication.Controllers
         }
 
         [HttpGet]
-        [Route("api/user")]
+        [Route("api/users")]
         public async Task<HttpResponseMessage> GetUserById([FromUri] Guid IdInput)
         {
             EntityRepository<Users> value = new EntityRepository<Users>();
@@ -39,7 +39,7 @@ namespace WebApplication.Controllers
         }
 
         [HttpPost]
-        [Route("api/user/add")]
+        [Route("api/users/add")]
         public HttpResponseMessage AddUsers([FromBody] UsersReq userInput)
         {
             EntityRepository<Users> value = new EntityRepository<Users>();
@@ -56,7 +56,7 @@ namespace WebApplication.Controllers
         }
 
         [HttpPatch]
-        [Route("api/user/update")]
+        [Route("api/users/update")]
         public async Task<HttpResponseMessage> UpdateUser([FromUri] Guid idInput, [FromBody] UsersReq userInput)
         {
             EntityRepository<Users> value = new EntityRepository<Users>();
@@ -74,7 +74,7 @@ namespace WebApplication.Controllers
         }
 
         [HttpDelete]
-        [Route("api/user/delete")]
+        [Route("api/users/delete")]
         public async Task<HttpResponseMessage> DeleteUser ([FromUri] Guid idInput)
         {
             EntityRepository<Users> value = new EntityRepository<Users>();
