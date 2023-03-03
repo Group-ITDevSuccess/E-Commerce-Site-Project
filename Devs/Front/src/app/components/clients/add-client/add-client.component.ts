@@ -33,6 +33,11 @@ export class AddClientComponent implements OnInit {
       BirthDayUser: ['', Validators.required],
       GenreUser: ['', Validators.required],
     });
+
+    this.route.paramMap.subscribe(params => {
+      const id = params.get('Id');
+      console.log(id);
+    })
   }
 
   public saveClient(){

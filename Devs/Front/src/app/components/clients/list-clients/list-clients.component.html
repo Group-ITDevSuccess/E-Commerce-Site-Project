@@ -26,16 +26,33 @@
         <th scope="col">Last Name</th>
         <th scope="col">Birth Day</th>
         <th scope="col">Genre</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
       <ng-container *ngFor="let client of filteredClients; let i = index">
         <tr>
           <th scope="row">{{i}}</th>
-          <td>{{client.FirstNameUser}}</td>
-          <td>{{client.LastNameUser}}</td>
-          <td>{{client.BirthDayUser}}</td>
-          <td>{{client.GenreUser}}</td>
+          <td>{{client.FirstNameClient}}</td>
+          <td>{{client.LastNameClient}}</td>
+          <td>{{client.BirthDayClient}}</td>
+          <td>{{client.GenreClient}}</td>
+          <td>
+            <span>
+              <span
+                class="material-icons text-danger ml-2 p-2 btn"
+                [routerLink]="['/clients','edit']"
+                [queryParams]="{ idInput: client.Id }">edit</span>
+              <span
+                class="material-icons text-danger ml-2 p-2 btn"
+                [routerLink]="['/clients', client.Id]"
+                [queryParams]="{ idInput: client.Id }">delete</span>
+              <span
+                class="material-icons text-primary ml-2 p-2 btn"
+                [routerLink]="['/clients', client.Id]"
+                [queryParams]="{ idInput: client.Id }">helps</span>
+            </span>
+          </td>
         </tr>
       </ng-container>
     </tbody>

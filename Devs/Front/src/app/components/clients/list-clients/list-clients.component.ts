@@ -42,11 +42,17 @@ export class ListClientsComponent implements OnInit {
     this.filteredClients = this.clientFilter ? this.filterClients(this.clientFilter) : this.clients;
   }
 
+  // public deleteClient(): void{
+  //   if (confirm(`Are you sur to delete that !`)) {
+  //     this.listClientService.deleteClient(this.clients.)
+  //   }
+  // }
+
   private filterClients(criteria: string): IClient[]{
     criteria = criteria.toLocaleLowerCase();
 
     const result = this.clients.filter(
-      (client: IClient) => client.FirstNameUser.toLocaleLowerCase().indexOf(criteria) != -1
+      (client: IClient) => client.FirstNameClient.toLocaleLowerCase().indexOf(criteria) != -1
     );
 
     return result;

@@ -9,26 +9,26 @@ import {catchError, map, tap} from 'rxjs/operators';
 })
 
 export class ListClientService{
-  private readonly USERS_API_URL = 'https://localhost:44360/api/users';
+  private readonly CLIENT_API_URL = 'https://localhost:44360/api';
 
   constructor(private http: HttpClient){}
 
   public getClients(): Observable<IClient[]>{
-    return this.http.get<IClient[]>(this.USERS_API_URL).pipe(
-      tap(client => console.log('Users : ', client)),
+    return this.http.get<IClient[]>(`${this.CLIENT_API_URL}/clients`).pipe(
+      tap(client => console.log('Users Get All : ', client)),
       catchError(this.handleError)
     );
   }
 
   public getClientsById(id: string): Observable<IClient>{
-    const url = `${this.USERS_API_URL}?idInput=%7B${id}%7D`;
+    const url = `${this.CLIENT_API_URL}/clients?idInput=%7B${id}%7D`;
 
     if (!id) {
       return of(this.getDefaultHotel());
     }
 
     return this.http.get<IClient>(url).pipe(
-      tap(client => console.log('User : ', client)),
+      tap(client => console.log('Clients Get By Id : ', client)),
       catchError(this.handleError)
     );
   }
@@ -37,18 +37,28 @@ export class ListClientService{
     client = {
       ...client,
       Id: null
-    }
+    };
 
-    return this.http.post<IClient>(this.USERS_API_URL, client).pipe(
+    return this.http.post<IClient>(this.CLIENT_API_URL, client).pipe(
+      tap(client => console.log('Clients Created : ', client)),
       catchError(this.handleError)
     );
   }
 
   public updateClient(client: IClient): Observable<IClient>{
-    const url = `${this.USERS_API_URL}?update=%7B${client.Id}%7D`;
+    const url = `${this.CLIENT_API_URL}/clients/update?idInput=%7B${client.Id}%7D`;
     return this.http.put<IClient>(url, client).pipe(
+      tap(client => console.log('Clients Update : ', client)),
       catchError(this.handleError)
     );
+  }
+
+  public deleteClient(id: string): Observable<{}>{
+    const url = `${this.CLIENT_API_URL}/clients/delete=?idInput=%7B${id}%7D`;
+
+    return this.http.delete<IClient>(url).pipe(
+      catchError(this.handleError)
+    )
   }
 
 
@@ -71,10 +81,10 @@ export class ListClientService{
   private getDefaultHotel(): IClient{
     return {
       Id: null,
-      FirstNameUser: null,
-      LastNameUser: null,
-      BirthDayUser: null,
-      GenreUser: null,
+      FirstNameClient: null,
+      LastNameClient: null,
+      BirthDayClient: null,
+      GenreClient: null,
     };
   }
 }
