@@ -1,25 +1,40 @@
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+<hr>
+  <h2 class="mb-2">{{title}}</h2>
+  <div class="row">
+    <div class="col-md-8 text-left">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+    </div>
+    <div class="col-md-4 text-right">
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" [(ngModel)]="clientFilter" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Add</button>
+      </div>
+    </div>
+  </div>
 
+<hr>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Birth Day</th>
+        <th scope="col">Genre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let client of filteredClients; let i = index">
+        <tr>
+          <th scope="row">{{i}}</th>
+          <td>{{client.FirstNameUser}}</td>
+          <td>{{client.LastNameUser}}</td>
+          <td>{{client.BirthDayUser}}</td>
+          <td>{{client.GenreUser}}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+
+</div>

@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { ListClientsComponent } from './components/clients/list-clients/list-clients.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { ListClientsComponent } from './components/clients/list-clients/list-cli
   ],
   imports: [
     BrowserModule,
-
+    HttpClientModule,
 
     ClientModule,
     AppRoutingModule
