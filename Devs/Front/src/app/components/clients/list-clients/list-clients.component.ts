@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ListClientService } from 'src/app/services/list-clients.service';
 import { IClient } from 'src/app/models/Clients';
@@ -12,7 +13,10 @@ export class ListClientsComponent implements OnInit {
 
   public title: string = 'List Clients';
 
-  constructor(private listClientService: ListClientService) { }
+  constructor(
+    private listClientService: ListClientService,
+    private router: Router
+    ) { }
 
   public clients : IClient[] = [];
   public filteredClients : IClient[] = [];
@@ -58,4 +62,22 @@ export class ListClientsComponent implements OnInit {
     return result;
   }
 
+  public saveCompleted(): void{
+    this.listClientService.getClients().subscribe(clients => {
+      this.clients = clients;
+    });
+    this.router.navigate(['/clients']);
+  }
+
+  public deleteClient(Id: string): void{
+
+    console.log(Id);
+
+    if (confirm(`Are you sur to delete that ?`)) {
+      this.listClientService.deleteClient(Id).subscribe({
+        next: () => this.saveCompleted()
+    });
+  }
+
+  }
 }

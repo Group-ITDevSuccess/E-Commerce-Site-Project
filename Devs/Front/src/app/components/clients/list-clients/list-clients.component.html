@@ -5,14 +5,14 @@
     <div class="col-md-8 text-left">
       <button
         class="btn btn-outline-danger my-2 my-sm-0"
-        type="submit"
+        type="button"
         [routerLink]="['/client/add']"
         >Add Client</button>
     </div>
     <div class="col-md-4 text-right">
       <div class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" [(ngModel)]="clientFilter" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Add</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button">Find </button>
       </div>
     </div>
   </div>
@@ -35,8 +35,8 @@
           <th scope="row">{{i}}</th>
           <td>{{client.FirstNameClient}}</td>
           <td>{{client.LastNameClient}}</td>
-          <td>{{client.BirthDayClient}}</td>
-          <td>{{client.GenreClient}}</td>
+          <td>{{client.BirthDayClient | date:'MMM d, y' }}</td>
+          <td>{{client.GenreClient ? 'Male' : 'Female' }}</td>
           <td>
             <span>
               <span
@@ -45,12 +45,11 @@
                 [queryParams]="{ idInput: client.Id }">edit</span>
               <span
                 class="material-icons text-danger ml-2 p-2 btn"
-                [routerLink]="['/clients', client.Id]"
-                [queryParams]="{ idInput: client.Id }">delete</span>
+                (click)="deleteClient(client.Id)">delete</span>
               <span
                 class="material-icons text-primary ml-2 p-2 btn"
                 [routerLink]="['/clients', client.Id]"
-                [queryParams]="{ idInput: client.Id }">helps</span>
+              >helps</span>
             </span>
           </td>
         </tr>

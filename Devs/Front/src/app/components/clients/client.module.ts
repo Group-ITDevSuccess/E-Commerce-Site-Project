@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from './../../shared/shared.module';
 import { ListClientsComponent } from './list-clients/list-clients.component';
 import { AddClientComponent } from './add-client/add-client.component';
+import { DetailsClientsComponent } from './details-clients/details-clients.component';
+import { EditClientComponent } from './edit-client/edit-client.component';
 
 @NgModule({
   declarations:[
     ListClientsComponent,
     AddClientComponent,
+    DetailsClientsComponent,
+    EditClientComponent,
   ],
   imports: [
     SharedModule,
