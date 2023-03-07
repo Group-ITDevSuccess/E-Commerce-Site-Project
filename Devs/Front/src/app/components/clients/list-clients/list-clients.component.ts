@@ -52,32 +52,40 @@ export class ListClientsComponent implements OnInit {
   //   }
   // }
 
-  private filterClients(criteria: string): IClient[]{
+  private filterClients(criteria: string): IClient[] {
     criteria = criteria.toLocaleLowerCase();
-
     const result = this.clients.filter(
-      (client: IClient) => client.FirstNameClient.toLocaleLowerCase().indexOf(criteria) != -1
+      (client: IClient) => client.FirstNameClient.toLocaleLowerCase().indexOf(this.clientFilter) != -1
     );
-
     return result;
-  }
+}
+
 
   public saveCompleted(): void{
     this.listClientService.getClients().subscribe(clients => {
       this.clients = clients;
+      this.filteredClients = this.clientFilter ? this.filterClients(this.clientFilter) : this.clients;
+      console.log(this.clients);
     });
-    this.router.navigate(['/clients']);
+    // this.router.navigate(['/clients']);
   }
+
 
   public deleteClient(Id: string): void{
-
     console.log(Id);
 
-    if (confirm(`Are you sur to delete that ?`)) {
-      this.listClientService.deleteClient(Id).subscribe({
-        next: () => this.saveCompleted()
-    });
+    if (confirm(`Are you sure to delete that?`)) {
+      this.listClientService.deleteClient(Id).subscribe((data:any)=>{
+        if (data.status == 200) {
+          this.listClientService.getClients().subscribe(clients => {
+            this.clients = clients;
+            this.filteredClients = this.clientFilter ? this.filterClients(this.clientFilter) : this.clients;
+            console.log(this.clients);
+            //this.saveCompleted();
+          });
+        }
+      });
+    }
   }
 
-  }
 }

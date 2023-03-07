@@ -1,5 +1,6 @@
 import { ClientRoutingModule } from './client-routing.module';
 import { NgModule } from '@angular/core';
+import { Ng2SmartTableModule } from 'ng2-smart-table';​
 
 import { SharedModule } from './../../shared/shared.module';
 import { ListClientsComponent } from './list-clients/list-clients.component';
@@ -17,6 +18,7 @@ import { EditClientComponent } from './edit-client/edit-client.component';
   imports: [
     SharedModule,
     ClientRoutingModule,
+    Ng2SmartTableModule
   ],
 })
 
