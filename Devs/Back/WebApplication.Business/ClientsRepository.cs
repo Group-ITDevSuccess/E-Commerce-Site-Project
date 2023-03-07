@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApplication.Entity;
 
 namespace WebApplication.Business
 {
-    class ClientsRepository
+    public class ClientsRepository : EntityRepository<Clients>
     {
+        
     }
 }
