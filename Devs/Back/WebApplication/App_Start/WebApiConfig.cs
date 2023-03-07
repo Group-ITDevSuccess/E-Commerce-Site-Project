@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using Unity;
+using WebApplication.Business;
+using WebApplication.Entity;
+using WebApplication.Resolvers;
 
 namespace WebApplication
 {
@@ -11,6 +15,12 @@ namespace WebApplication
         {
             // Configuration et services API Web
 
+
+            // DI:
+            UnityContainer unityContainer = new UnityContainer();
+            SetDependencies(unityContainer);
+            config.DependencyResolver = new UnityResolver(unityContainer);
+
             // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();
 
@@ -19,6 +29,11 @@ namespace WebApplication
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+        }
+
+        private static void SetDependencies(UnityContainer container)
+        {
+            container.RegisterType<EntityRepository<Clients>>();
         }
     }
 }

@@ -13,13 +13,20 @@ namespace WebApplication.Controllers
 {
     public class ClientsController : ApiController
     {
+        private EntityRepository<Clients> _clientRepository = null;
+
+        public ClientsController(EntityRepository<Clients> clientRepository)
+        {
+            _clientRepository = clientRepository;
+        }
+
         [HttpGet]
         [Route("api/clients")]
         public async Task<HttpResponseMessage> GetAllClients()
         {
-            EntityRepository<Clients> value = new EntityRepository<Clients>();
-
-            var listOfAllClients = await value.GetAll();
+            //EntityRepository<Clients> value = new EntityRepository<Clients>();
+            
+            var listOfAllClients = await _clientRepository.GetAll();
 
             return Request.CreateResponse(HttpStatusCode.OK, listOfAllClients);
         }
@@ -28,9 +35,8 @@ namespace WebApplication.Controllers
         [Route("api/clients")]
         public async Task<HttpResponseMessage> GetClientById([FromUri] Guid IdInput)
         {
-            EntityRepository<Clients> value = new EntityRepository<Clients>();
 
-            var findClientId = await value.GetById(IdInput);
+            var findClientId = await _clientRepository.GetById(IdInput);
 
             if (findClientId == null) return Request.CreateResponse(HttpStatusCode.NotFound, "L'Id du client saisi n'existe pas !");
 
@@ -42,7 +48,6 @@ namespace WebApplication.Controllers
         [Route("api/clients/add")]
         public HttpResponseMessage AddClient([FromBody] ClientsReq clientInput)
         {
-            EntityRepository<Clients> value = new EntityRepository<Clients>();
             Clients client = new Clients();
 
             client.FirstNameClient = clientInput.FirstNameClient;
@@ -50,7 +55,7 @@ namespace WebApplication.Controllers
             client.BirthDayClient = clientInput.BirthDayClient;
             client.GenreClient = clientInput.GenreClient;
 
-            value.SaveOrUpdate(client);
+            _clientRepository.SaveOrUpdate(client);
 
             return Request.CreateResponse(HttpStatusCode.Created, "Client Enregistrer !");
         }
@@ -59,9 +64,8 @@ namespace WebApplication.Controllers
         [Route("api/clients/update")]
         public async Task<HttpResponseMessage> UpdateClient([FromUri] Guid idInput, [FromBody] ClientsReq clientInput)
         {
-            EntityRepository<Clients> value = new EntityRepository<Clients>();
 
-            var findClientId = await value.GetById(idInput);
+            var findClientId = await _clientRepository.GetById(idInput);
             if (findClientId == null) return Request.CreateResponse(HttpStatusCode.NotFound, "Client introuvable, mise ajour impossible !");
 
             findClientId.FirstNameClient = clientInput.FirstNameClient;
@@ -69,7 +73,7 @@ namespace WebApplication.Controllers
             findClientId.BirthDayClient = clientInput.BirthDayClient;
             findClientId.GenreClient = clientInput.GenreClient;
 
-            value.SaveOrUpdateAsynk(findClientId);
+            _clientRepository.SaveOrUpdateAsynk(findClientId);
             return Request.CreateResponse(HttpStatusCode.OK, "Client Mise a Jour !");
         }
 
@@ -77,12 +81,11 @@ namespace WebApplication.Controllers
         [Route("api/clients/delete")]
         public async Task<HttpResponseMessage> DeleteClient ([FromUri] Guid idInput)
         {
-            EntityRepository<Clients> value = new EntityRepository<Clients>();
 
-            var findClientId = await value.GetById(idInput);
+            var findClientId = await _clientRepository.GetById(idInput);
             if (findClientId == null) return Request.CreateResponse(HttpStatusCode.NotFound, "Client introuvable, mise ajour impossible !");
 
-            await value.DeleteById(idInput);
+            await _clientRepository.DeleteById(idInput);
             return Request.CreateResponse(HttpStatusCode.OK, "Client Effacer !");
 
         }
