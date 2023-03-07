@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ListClientService } from 'src/app/services/list-clients.service';
 import { IClient } from 'src/app/models/Clients';
@@ -12,7 +13,10 @@ export class ListClientsComponent implements OnInit {
 
   public title: string = 'List Clients';
 
-  constructor(private listClientService: ListClientService) { }
+  constructor(
+    private listClientService: ListClientService,
+    private router: Router
+    ) { }
 
   public clients : IClient[] = [];
   public filteredClients : IClient[] = [];
@@ -48,14 +52,40 @@ export class ListClientsComponent implements OnInit {
   //   }
   // }
 
-  private filterClients(criteria: string): IClient[]{
+  private filterClients(criteria: string): IClient[] {
     criteria = criteria.toLocaleLowerCase();
-
     const result = this.clients.filter(
-      (client: IClient) => client.FirstNameClient.toLocaleLowerCase().indexOf(criteria) != -1
+      (client: IClient) => client.FirstNameClient.toLocaleLowerCase().indexOf(this.clientFilter) != -1
     );
-
     return result;
+}
+
+
+  public saveCompleted(): void{
+    this.listClientService.getClients().subscribe(clients => {
+      this.clients = clients;
+      this.filteredClients = this.clientFilter ? this.filterClients(this.clientFilter) : this.clients;
+      console.log(this.clients);
+    });
+    // this.router.navigate(['/clients']);
+  }
+
+
+  public deleteClient(Id: string): void{
+    console.log(Id);
+
+    if (confirm(`Are you sure to delete that?`)) {
+      this.listClientService.deleteClient(Id).subscribe((data:any)=>{
+        if (data.status == 200) {
+          this.listClientService.getClients().subscribe(clients => {
+            this.clients = clients;
+            this.filteredClients = this.clientFilter ? this.filterClients(this.clientFilter) : this.clients;
+            console.log(this.clients);
+            //this.saveCompleted();
+          });
+        }
+      });
+    }
   }
 
 }

@@ -38,8 +38,9 @@ export class ListClientService{
       ...client,
       Id: null
     };
+    const url = `${this.CLIENT_API_URL}/clients/add`;
+    return this.http.post<IClient>(url, client).pipe(
 
-    return this.http.post<IClient>(this.CLIENT_API_URL, client).pipe(
       tap(client => console.log('Clients Created : ', client)),
       catchError(this.handleError)
     );
@@ -54,8 +55,8 @@ export class ListClientService{
   }
 
   public deleteClient(id: string): Observable<{}>{
-    const url = `${this.CLIENT_API_URL}/clients/delete=?idInput=%7B${id}%7D`;
-
+    const url = `${this.CLIENT_API_URL}/clients/delete?idInput=%7B${id}%7D`;
+    console.log(url);
     return this.http.delete<IClient>(url).pipe(
       catchError(this.handleError)
     )

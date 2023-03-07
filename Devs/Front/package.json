@@ -22,6 +22,10 @@
     "angular-in-memory-web-api": "^0.11.0",
     "bootstrap": "^4.5.0",
     "material-icons": "^1.13.1",
+    "ng2-charts": "^4.1.1",
+    "ng2-completer": "^9.0.1",
+    "ng2-smart-table": "^1.7.2",
+    "ngx-spinner": "^15.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

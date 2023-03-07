@@ -17,6 +17,10 @@ export class AddClientComponent implements OnInit {
 
   public client: IClient;
 
+  public errorMessage: string;
+
+  public pageTitle: string;
+
   private isFormSubmitted: boolean;
 
   constructor(
@@ -26,12 +30,13 @@ export class AddClientComponent implements OnInit {
     private router: Router
   ) { }
 
+
   ngOnInit(): void {
     this.clientForm = this.fb.group({
-      FirstNameUser: ['', Validators.required],
-      LastNameUser: ['', Validators.required],
-      BirthDayUser: ['', Validators.required],
-      GenreUser: ['', Validators.required],
+      FirstNameClient: ['', Validators.required],
+      LastNameClient: ['', Validators.required],
+      BirthDayClient: ['', Validators.required],
+      GenreClient: ['', Validators.required],
     });
 
     this.route.paramMap.subscribe(params => {
@@ -39,6 +44,8 @@ export class AddClientComponent implements OnInit {
       console.log(id);
     })
   }
+
+
 
   public saveClient(){
     this.isFormSubmitted = true;
@@ -55,11 +62,56 @@ export class AddClientComponent implements OnInit {
           ...this.clientForm.value
         };
 
-        // if (client.Id === null | client.Id === '') {
-
-        // }
+        if (!client.Id){
+          this.clientsService.createClient(client).subscribe({
+            next: () => this.saveCompleted(),
+            error: (err) => this.errorMessage = err
+          });
+        }else{
+          this.clientsService.updateClient(client).subscribe({
+            next: () => this.saveCompleted(),
+            error: (err) => this.errorMessage = err
+          })
+        }
       }
     }
+    console.log('Value : '+this.clientForm.value);
+  }
+
+  public saveCompleted(): void{
+    this.clientForm.reset();
+    this.router.navigate(['/clients']);
+  }
+
+  public backToList(){
+    this.router.navigate(['/clients']);
+  }
+
+  public resetForm(){
+    this.clientForm.reset();
+  }
+
+  public getSelectedClient(id: string): void{
+    this.clientsService.getClientsById(id).subscribe((client: IClient) => {
+      this.displayClient(client);
+    })
+  }
+
+  public displayClient(client: IClient): void{
+    this.client = client;
+
+    if (this.client.Id) {
+      this.pageTitle = 'Edit Client';
+    }else{
+      this.pageTitle = 'Add Client';
+    }
+
+    this.clientForm.patchValue({
+      FirstNameClient: this.client.FirstNameClient,
+      LastNameClient: this.client.LastNameClient,
+      BirthDayClient: this.client.BirthDayClient,
+      GenreClient: this.client.GenreClient
+    });
   }
 
 }
