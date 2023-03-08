@@ -34,6 +34,7 @@ namespace WebApplication
         private static void SetDependencies(UnityContainer container)
         {
             container.RegisterType<EntityRepository<Clients>>();
+            container.RegisterType<EntityRepository<Contacts>, ContactsRepository>();
         }
     }
 }

@@ -65,13 +65,18 @@ namespace WebApplication.Controllers
                 address.Street = addressInput.Street;
                 address.Batch = addressInput.Batch;
                 address.Postal_Code = addressInput.Postal_Code;
-         
                 client.AddressClient.Add(address);
             }
 
-            _clientRepository.SaveOrUpdate(client);
-
-            return Request.CreateResponse(HttpStatusCode.Created, "Client Enregistrer !");
+            try
+            {
+                _clientRepository.SaveOrUpdate(client);
+                return Request.CreateResponse(HttpStatusCode.Created, "Client enregistré !");
+            }
+            catch (Exception e)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, $"Erreur lors de l'enregistrement du client : {e.Message}");
+            }
         }
 
         [HttpPatch]

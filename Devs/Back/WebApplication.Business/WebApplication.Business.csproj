@@ -126,6 +126,7 @@
   <ItemGroup>
     <Compile Include="AddressClientRepository.cs" />
     <Compile Include="ClientsRepository.cs" />
+    <Compile Include="ContactsRepository.cs" />
     <Compile Include="EntityRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
