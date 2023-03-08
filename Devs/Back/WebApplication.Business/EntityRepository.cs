@@ -11,7 +11,7 @@ namespace WebApplication.Business
 {
     public class EntityRepository<T> where T : Entity.Entity
     {
-        public virtual async Task<T> GetById(Guid Id)
+        public async Task<T> GetById(Guid Id)
         {
             using(ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {
@@ -19,7 +19,7 @@ namespace WebApplication.Business
             }
         }
 
-        public virtual async Task<List<T>> GetAll(int skip=0, int take = -1)
+        public  async Task<List<T>> GetAll(int skip=0, int take = -1)
         {
             using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {
@@ -39,7 +39,7 @@ namespace WebApplication.Business
             }
         }
 
-        public virtual void SaveOrUpdate(T entity)
+        public  void SaveOrUpdate(T entity)
         {
             using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {
@@ -59,7 +59,7 @@ namespace WebApplication.Business
             }
         }
 
-        public virtual async void SaveOrUpdateAsynk(T entity)
+        public  async void SaveOrUpdateAsynk(T entity)
         {
             using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {
@@ -79,7 +79,7 @@ namespace WebApplication.Business
             }
         }
 
-        public virtual async Task DeleteById(Guid Id)
+        public  async Task DeleteById(Guid Id)
         {
             using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {

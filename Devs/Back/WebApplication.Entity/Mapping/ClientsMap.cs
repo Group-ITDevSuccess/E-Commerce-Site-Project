@@ -16,6 +16,9 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.LastNameClient).Not.Nullable();
             Map(x => x.BirthDayClient).Not.Nullable();
             Map(x => x.GenreClient).Not.Nullable();
+            HasMany(x => x.AddressClient)
+                .Cascade.All()
+                .Not.LazyLoad();
         }
     }
 }

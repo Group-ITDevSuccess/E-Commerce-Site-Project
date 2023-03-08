@@ -22,7 +22,7 @@ namespace WebApplication.Controllers
 
         [HttpGet]
         [Route("api/clients")]
-        public async Task<HttpResponseMessage> GetAllClients()
+        public virtual async Task<HttpResponseMessage> GetAllClients()
         {
             //EntityRepository<Clients> value = new EntityRepository<Clients>();
             
@@ -54,6 +54,20 @@ namespace WebApplication.Controllers
             client.LastNameClient = clientInput.LastNameClient;
             client.BirthDayClient = clientInput.BirthDayClient;
             client.GenreClient = clientInput.GenreClient;
+            client.AddressClient = new List<AddressClients>();
+
+            foreach (var addressInput in clientInput.AddressClient)
+            {
+                AddressClients address = new AddressClients();
+                address.City = addressInput.City;
+                address.Country = addressInput.Country;
+                address.Quarter = addressInput.Quarter;
+                address.Street = addressInput.Street;
+                address.Batch = addressInput.Batch;
+                address.Postal_Code = addressInput.Postal_Code;
+         
+                client.AddressClient.Add(address);
+            }
 
             _clientRepository.SaveOrUpdate(client);
 

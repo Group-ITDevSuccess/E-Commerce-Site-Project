@@ -102,3 +102,5 @@ D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Deb
 D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.csproj.CopyComplete
 D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.dll
 D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.pdb
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Newtonsoft.Json.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Newtonsoft.Json.xml

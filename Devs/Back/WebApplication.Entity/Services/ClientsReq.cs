@@ -8,9 +8,10 @@ namespace WebApplication.Entity.Services
 {
     public class ClientsReq
     {
-        public virtual string FirstNameClient { get; set; }
-        public virtual string LastNameClient { get; set; }
-        public virtual DateTime BirthDayClient { get; set; }
-        public virtual bool GenreClient { get; set; }
+        public string FirstNameClient { get; set; }
+        public string LastNameClient { get; set; }
+        public DateTime BirthDayClient { get; set; }
+        public bool GenreClient { get; set; }
+        public List<AddressClientsReq> AddressClient {get; set;}
     }
 }

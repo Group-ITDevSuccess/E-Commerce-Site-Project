@@ -12,5 +12,6 @@ namespace WebApplication.Entity
         public virtual string LastNameClient { get; set; }
         public virtual DateTime BirthDayClient { get; set; }
         public virtual bool GenreClient { get; set; }
+        public virtual IList<AddressClients> AddressClient { get; set; }
     }
 }
