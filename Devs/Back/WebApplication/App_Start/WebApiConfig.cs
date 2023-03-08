@@ -35,6 +35,7 @@ namespace WebApplication
         {
             container.RegisterType<EntityRepository<Clients>>();
             container.RegisterType<EntityRepository<Contacts>, ContactsRepository>();
+            container.RegisterType<EntityRepository<Brand>, BrandsRepository>();
         }
     }
 }
