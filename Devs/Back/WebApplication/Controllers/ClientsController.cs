@@ -54,19 +54,15 @@ namespace WebApplication.Controllers
             client.LastNameClient = clientInput.LastNameClient;
             client.BirthDayClient = clientInput.BirthDayClient;
             client.GenreClient = clientInput.GenreClient;
-            client.AddressClient = new List<AddressClients>();
-
-            foreach (var addressInput in clientInput.AddressClient)
+            client.AddressClient = new AddressClients
             {
-                AddressClients address = new AddressClients();
-                address.City = addressInput.City;
-                address.Country = addressInput.Country;
-                address.Quarter = addressInput.Quarter;
-                address.Street = addressInput.Street;
-                address.Batch = addressInput.Batch;
-                address.Postal_Code = addressInput.Postal_Code;
-                client.AddressClient.Add(address);
-            }
+                City = clientInput.AddressClient.City,
+                Country = clientInput.AddressClient.Country,
+                Quarter = clientInput.AddressClient.Quarter,
+                Street = clientInput.AddressClient.Street,
+                Batch = clientInput.AddressClient.Batch,
+                Postal_Code = clientInput.AddressClient.Postal_Code,
+            };
 
             try
             {

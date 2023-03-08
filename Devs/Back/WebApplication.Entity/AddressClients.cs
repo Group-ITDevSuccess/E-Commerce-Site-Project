@@ -16,7 +16,5 @@ namespace WebApplication.Entity
         public virtual string Batch { get; set; }
         public virtual string Postal_Code { get; set; }
 
-        [JsonIgnore]
-        public virtual Clients Client { get; set; }
     }
 }
