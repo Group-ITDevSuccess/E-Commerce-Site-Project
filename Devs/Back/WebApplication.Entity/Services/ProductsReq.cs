@@ -12,5 +12,6 @@ namespace WebApplication.Entity.Services
         public string ProductPrice { get; set; }
         public string ProductDescription { get; set; }
         public Brand ProductBrand { get; set; }
+        public Categories ProductCategorie { get; set; }
     }
 }

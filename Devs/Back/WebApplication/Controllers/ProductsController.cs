@@ -40,6 +40,11 @@ namespace WebApplication.Controllers
             {
                 BrandName = productInput.ProductBrand.BrandName
             };
+            value.CategorieProduct = new Categories
+            {
+                Type = productInput.ProductCategorie.Type,
+                Description = productInput.ProductCategorie.Description
+            };
 
             try
             {

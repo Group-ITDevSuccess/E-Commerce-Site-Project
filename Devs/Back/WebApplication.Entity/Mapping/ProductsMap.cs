@@ -19,6 +19,14 @@ namespace WebApplication.Entity.Mapping
             References(x => x.BrandProduct)
                 .Cascade.All()
                 .Not.LazyLoad();
+
+            References(x => x.CategorieProduct)
+                .Cascade.All()
+                .Not.LazyLoad();
+
+            HasManyToMany<Stocks>(x => x.Stock)
+                .Table("HistoriqueStock")
+                .Not.LazyLoad();
         }
     }
 }

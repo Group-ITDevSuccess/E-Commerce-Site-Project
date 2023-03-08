@@ -12,5 +12,7 @@ namespace WebApplication.Entity
         public virtual string ProductPrice { get; set; }
         public virtual string ProductDescription { get; set; }
         public virtual Brand BrandProduct { get; set; }
+        public virtual Categories CategorieProduct { get; set; }
+        public virtual IList<Stocks> Stock { get; set; }
     }
 }

@@ -30,9 +30,14 @@ namespace WebApplication.Entity.Mapping
                 .Not.LazyLoad();*/
 
             HasMany(x => x.Contact)
-            .Inverse()
-            .Cascade.All()
-            .Not.LazyLoad();
+                .Inverse()
+                .Cascade.All()
+                .Not.LazyLoad();
+
+            HasMany(x => x.Account)
+                .Inverse()
+                .Cascade.All()
+                .Not.LazyLoad();
         }
     }
 }
