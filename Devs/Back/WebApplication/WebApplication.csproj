@@ -88,6 +88,9 @@
     <Reference Include="NHibernate, Version=5.2.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>packages\NHibernate.5.2.0\lib\net461\NHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="NHibernate.Mapping.Attributes, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>packages\NHibernate.Mapping.Attributes.5.1.0\lib\net461\NHibernate.Mapping.Attributes.dll</HintPath>
+    </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
@@ -241,9 +244,12 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\AddressClientsController.cs" />
+    <Compile Include="Controllers\BankAccountsController.cs" />
     <Compile Include="Controllers\BrandsController.cs" />
+    <Compile Include="Controllers\CardsController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\FixturesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -347,6 +353,10 @@
     <ProjectReference Include="..\WebApplication.Entity\WebApplication.Entity.csproj">
       <Project>{CD1E5F13-4A4E-4C13-A6BC-F08C8A69991D}</Project>
       <Name>WebApplication.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApplication.Utils\WebApplication.Utils.csproj">
+      <Project>{630FCA75-39CA-4150-91DC-CA1E5BD1062F}</Project>
+      <Name>WebApplication.Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

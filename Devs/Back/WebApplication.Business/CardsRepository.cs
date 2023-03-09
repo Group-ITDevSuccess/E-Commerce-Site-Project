@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApplication.Entity;
 
-namespace WebApplication.Utils
+namespace WebApplication.Business
 {
-    public class Class1
+    public class CardsRepository : EntityRepository<Cards>
     {
     }
 }

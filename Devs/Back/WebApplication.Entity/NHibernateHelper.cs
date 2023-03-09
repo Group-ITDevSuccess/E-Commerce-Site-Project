@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApplication.Entity.Mapping;
 
 namespace WebApplication.Entity
 {
@@ -40,7 +41,6 @@ namespace WebApplication.Entity
             }
             catch (Exception e)
             {
-
                 throw e;
             }
         }
