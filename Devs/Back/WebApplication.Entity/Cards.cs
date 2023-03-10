@@ -10,6 +10,5 @@ namespace WebApplication.Entity
     public class Cards : Entity
     {
         public virtual CardTypeEnum CardType { get; set; }
-        public virtual string Description { get; set; }
     }
 }

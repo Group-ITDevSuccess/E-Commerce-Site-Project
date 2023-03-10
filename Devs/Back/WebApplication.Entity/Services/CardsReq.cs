@@ -9,7 +9,6 @@ namespace WebApplication.Entity.Services
 {
     class CardsReq
     {
-        public CardTypeEnum CardType { get; set; }
-        public string Description { get; set; }
+        public List<CardTypeEnum> CardType { get; set; }
     }
 }

@@ -13,8 +13,9 @@ namespace WebApplication.Entity.Mapping
         public CardsMap()
         {
             Abstract();
-            Map(x => x.CardType).CustomType<CardTypeEnum>();
-            Map(x => x.Description).Not.Nullable();
+            Table("cards"); // spécifier le nom de la table ici
+            Map(x => x.CardType).Not.Nullable();
         }
     }
 }
+
