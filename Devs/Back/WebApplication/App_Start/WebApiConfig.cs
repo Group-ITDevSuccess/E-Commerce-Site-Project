@@ -40,7 +40,8 @@ namespace WebApplication
             container.RegisterType<EntityRepository<Categories>, CategoriesRepository>();
             container.RegisterType<EntityRepository<Stocks>, StocksRepository>();
             container.RegisterType<EntityRepository<BankAccount>, BankAccountRepository>();
-            container.RegisterType<EntityRepository<Cards>,CardsRepository>();
+            container.RegisterType<EntityRepository<CardTypes>,CardTypesRepository>();
+            container.RegisterType<EntityRepository<Cards>, CardsRepository>();
         }
     }
 }

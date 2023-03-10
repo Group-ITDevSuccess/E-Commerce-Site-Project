@@ -12,9 +12,10 @@ namespace WebApplication.Entity.Mapping
         public BankAccountMap()
         {
             Abstract();
-            Map(x => x.PassWord).Not.Nullable();
-            Map(x => x.BankCode)
-                .Formula("CardTypes + '-' + CONVERT(NVARCHAR(20), HASHBYTES('MD5', PassWord), 2)");
+            Map(x => x.Intituler).Not.Nullable();
+
+            /*Map(x => x.BankCode)
+                .Formula("CardTypes + '-' + CONVERT(NVARCHAR(20), HASHBYTES('MD5', PassWord), 2)");*/
         }
     }   
 }

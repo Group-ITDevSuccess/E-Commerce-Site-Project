@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApplication.Enum;
 
 namespace WebApplication.Entity.Services
 {
-    class CardsReq
+    public class CardsReq
     {
-        public List<CardTypeEnum> CardType { get; set; }
+        public string Number { get; set; }
+        public string PassWord { get; set; }
+        public DateTime ExpirationDate { get; set; }
+        public string CardholderName { get; set; }
+
+        public bool IsPasswordCorrect(CardsReq request)
+        {
+            return PassWord == request.PassWord;
+        }
+
     }
 }

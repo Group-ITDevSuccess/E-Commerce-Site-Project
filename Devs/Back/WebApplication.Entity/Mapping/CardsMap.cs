@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApplication.Enum;
 
 namespace WebApplication.Entity.Mapping
 {
@@ -13,9 +12,24 @@ namespace WebApplication.Entity.Mapping
         public CardsMap()
         {
             Abstract();
-            Table("cards"); // spécifier le nom de la table ici
-            Map(x => x.CardType).Not.Nullable();
+
+            Map(x => x.Number)
+                /*.Access.ReadOnly()
+                .Generated.Insert()*/
+                .Not.Nullable()
+                /*.Unique()
+                .Length(16);*/;
+
+            Map(x => x.PassWord)
+                .Not.Nullable()
+               /* .Length(50);*/;
+
+            Map(x => x.DateCreation)
+                /*.Access.ReadOnly()
+                .Generated.Insert()*/
+                .Not.Nullable()
+                /* .CustomType("datetime2")
+                 .Column("CreationDate");*/;
         }
     }
 }
-

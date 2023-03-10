@@ -9,12 +9,19 @@ namespace WebApplication.Entity
 {
     public class BankAccount : Entity
     {
-        public virtual IList<Cards> CardTypes { get; set; }
-        public virtual string PassWord { get; set; }
+        public virtual string Intituler { get; set; }
+        /*
+        public virtual DateTime DateCreation { get; set; }
+
+
+        public BankAccount()
+        {
+            DateCreation = DateTime.Now;
+        }
 
         public virtual string BankCode
         {
-            get { return string.Format("{0}-{1}", CardTypes, PassWord.GetHashCode()); }
-        }
+            get { return string.Format("{0}-{1}", Intituler, PassWord.GetHashCode()); }
+        }*/
     }
 }

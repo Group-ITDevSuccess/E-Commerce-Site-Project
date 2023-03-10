@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApplication.Entity;
 
-namespace WebApplication.Entity.Services
+namespace WebApplication.Business
 {
-    class BankAccountReq
+    public class CardTypesRepository : EntityRepository<CardTypes>
     {
-        public string Intituler { get; set; }
     }
 }

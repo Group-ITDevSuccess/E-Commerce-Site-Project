@@ -16,52 +16,52 @@ namespace WebApplication.Utils
                 {
                     try
                     {
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.AmericanExpress,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.Mastercard,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.Visa,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.Discover,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.DinersClub,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.JCB,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.UnionPay,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.Maestro,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.VisaElectron,
                         });
 
-                        await session.SaveOrUpdateAsync(new Cards()
+                        await session.SaveOrUpdateAsync(new CardTypes()
                         {
                             CardType = CardTypeEnum.PayPal,
                         });

@@ -16,6 +16,7 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.ProductPrice).Not.Nullable();
             Map(x => x.ProductDescription).Nullable();
 
+
             References(x => x.BrandProduct)
                 .Cascade.All()
                 .Not.LazyLoad();
