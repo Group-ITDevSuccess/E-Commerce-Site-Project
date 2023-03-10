@@ -4,9 +4,9 @@
 
 <Workspace>
 	<Local Expanded="Yes" Name="e-commerce">
-		<Model Expanded="Yes" ID="{45413BA3-7292-459C-A794-6D6A74A01196}" Name="MCD" Selected="Yes" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="MCD.cdm"/>
-		<Model Expanded="Yes" ID="{FF86B183-5297-4868-9277-21A299541869}" Name="Logical Data Model" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="Logical Data Model.ldm"/>
-		<Model Expanded="Yes" ID="{B20521BE-A956-444C-8A1F-A840267A4B81}" Loaded="No" Name="Physical Data Model" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Physical Data Model.pdm"/>
+		<Model Expanded="Yes" ID="{45413BA3-7292-459C-A794-6D6A74A01196}" Name="Conceptual Data Model" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="MCD.cdm"/>
+		<Model Expanded="Yes" ID="{C5DE7DE1-83A9-43F7-A533-72DD65A868D8}" Name="Logical Data Model" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="MLD.ldm"/>
+		<Model Expanded="Yes" ID="{5AFF5B90-217E-438C-9F52-0BC3DAA2CAF7}" Name="Physical Data Model" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="MPD.pdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>
