@@ -247,7 +247,6 @@
     <Compile Include="Controllers\BankAccountsController.cs" />
     <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\CardsController.cs" />
-    <Compile Include="Controllers\CardTypesController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\FixturesController.cs" />

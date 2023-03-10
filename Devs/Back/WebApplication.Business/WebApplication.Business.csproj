@@ -132,7 +132,6 @@
     <Compile Include="BankAccountRepository.cs" />
     <Compile Include="BrandsRepository.cs" />
     <Compile Include="CardsRepository.cs" />
-    <Compile Include="CardTypesRepository.cs" />
     <Compile Include="CategoriesRepository.cs" />
     <Compile Include="ClientsRepository.cs" />
     <Compile Include="ContactsRepository.cs" />
