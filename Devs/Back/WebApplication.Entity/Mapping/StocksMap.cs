@@ -16,7 +16,7 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.Remarque).Nullable();
 
             HasManyToMany<Products>(x => x.Product)
-                .Table("HistoriqueStock")
+                .Table("Ligne_Publication")
                 .Cascade.All()
                 .Inverse()
                 .Not.LazyLoad();

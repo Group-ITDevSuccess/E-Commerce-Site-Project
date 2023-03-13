@@ -141,7 +141,6 @@
     <Compile Include="Mapping\BankAccountMap.cs" />
     <Compile Include="Mapping\BrandMap.cs" />
     <Compile Include="Mapping\CardsMap.cs" />
-    <Compile Include="Mapping\CardTypesMap.cs" />
     <Compile Include="Mapping\CategoriesMap.cs" />
     <Compile Include="Mapping\ContactsMap.cs" />
     <Compile Include="Mapping\EntityMap.cs" />
@@ -156,7 +155,7 @@
     <Compile Include="Services\BankAccountReq.cs" />
     <Compile Include="Services\BrandReq.cs" />
     <Compile Include="Services\CardsReq.cs" />
-    <Compile Include="Services\CardTypesReq.cs" />
+    <Compile Include="Services\CardTypesMap.cs" />
     <Compile Include="Services\CategoriesReq.cs" />
     <Compile Include="Services\ClientsReq.cs" />
     <Compile Include="Clients.cs" />

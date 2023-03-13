@@ -26,7 +26,7 @@ namespace WebApplication.Entity.Mapping
                 .Not.LazyLoad();
 
             HasManyToMany<Stocks>(x => x.Stock)
-                .Table("HistoriqueStock")
+                .Table("Ligne_Publication")
                 .Not.LazyLoad();
         }
     }
