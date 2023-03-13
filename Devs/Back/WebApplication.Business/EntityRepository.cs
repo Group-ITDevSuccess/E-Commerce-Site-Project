@@ -19,7 +19,7 @@ namespace WebApplication.Business
             }
         }
 
-        public async Task<List<T>> GetAll(int skip=0, int take = -1)
+        public  async Task<List<T>> GetAll(int skip=0, int take = -1)
         {
             using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {
@@ -39,7 +39,7 @@ namespace WebApplication.Business
             }
         }
 
-        public void SaveOrUpdate(T entity)
+        public  void SaveOrUpdate(T entity)
         {
             using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {
