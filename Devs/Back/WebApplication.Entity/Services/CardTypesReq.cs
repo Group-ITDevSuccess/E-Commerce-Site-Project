@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using WebApplication.Enum;
 
-namespace WebApplication.Entity
+namespace WebApplication.Entity.Services
 {
-    public class CardTypes : Entity
+    public class CardTypesReq
     {
-        public virtual CardTypeEnum CardType { get; set; }
+        public List<CardTypeEnum> CardTypes { get; set; }
     }
 }
