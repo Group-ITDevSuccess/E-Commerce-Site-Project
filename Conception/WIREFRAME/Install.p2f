@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?p2f version='1.0.0'?>
+<p2f version='1.0.0'>
+  <ius size='2'>
+    <iu id='com.wireframesketcher.studio.product' name='WireframeSketcher' version='6.2.2.20200326-1519'>
+      <repositories size='1'>
+        <repository location='http://wireframesketcher.com/updates/studio6'/>
+      </repositories>
+    </iu>
+    <iu id='com.wireframesketcher.feature.group' name='WireframeSketcher' version='6.2.2'>
+      <repositories size='2'>
+        <repository location='http://wireframesketcher.com/updates/studio6'/>
+        <repository location='http://wireframesketcher.com/updates'/>
+      </repositories>
+    </iu>
+  </ius>
+</p2f>
