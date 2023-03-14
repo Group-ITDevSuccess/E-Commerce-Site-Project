@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="224" y="216" width="569" height="401" text="Browser&#xA;http://localhost/api/clients/add" measuredWidth="569" measuredHeight="401">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Menu" id="2" x="224" y="268" width="569" text=" &amp;Acceuil,&amp;Listes Produits,&amp;Les Transactions,&amp;Promotions,  &amp;Profils" measuredWidth="569" measuredHeight="27" selection="0" icon="fire (small)">
+    <items link="" x="26" y="0" width="53" height="27" text=" &amp;Acceuil"/>
+    <items link="../../Listes%20Produit/Liste%20Produit.screen" x="79" y="0" width="87" height="27" text="&amp;Listes Produits"/>
+    <items x="166" y="0" width="96" height="27" text="&amp;Les Transactions"/>
+    <items x="262" y="0" width="73" height="27" text="&amp;Promotions"/>
+    <items link="../../Profils/Profils(Y).screen" x="335" y="0" width="47" height="27" text=" &amp;Profils"/>
+  </widgets>
+  <widgets xsi:type="model:Tabs" id="3" x="229" y="384" width="559" text="Alimentation,Beauté et santé,Électronique et technologie,Maison et jardin,Mode et accessoires" measuredWidth="559" measuredHeight="27" selection="0">
+    <items x="1" y="0" width="90" height="27" text="Alimentation"/>
+    <items x="91" y="0" width="101" height="27" text="Beauté et santé"/>
+    <items x="192" y="0" width="166" height="27" text="Électronique et technologie"/>
+    <items x="358" y="0" width="106" height="27" text="Maison et jardin"/>
+    <items x="464" y="0" width="127" height="27" text="Mode et accessoires"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="4" x="771" y="410" height="207" measuredWidth="17" measuredHeight="207"/>
+  <widgets xsi:type="model:WidgetGroup" id="50" x="248" y="448" measuredWidth="512" measuredHeight="146">
+    <widgets xsi:type="model:Label" id="12" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="13" x="56" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="14" x="120" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="15" x="184" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="16" x="240" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="17" x="296" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="18" x="360" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="19" x="424" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="20" x="480" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="31" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="32" x="56" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="33" x="120" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="34" x="184" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="36" x="296" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="38" x="424" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="39" x="480" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="47" x="240" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="48" x="360" y="88" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:SearchField" id="52" x="706" y="344" text="Search" measuredWidth="66" measuredHeight="24">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:ButtonBar" id="53" x="328" y="342" text="Prix, Stock, Promotion" measuredWidth="171" measuredHeight="27" selection="0">
+    <font/>
+    <items x="0" y="0" width="42" height="27" text="Prix"/>
+    <items x="42" y="0" width="50" height="27" text="Stock"/>
+    <items x="92" y="0" width="79" height="27" text="Promotion"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="54" x="248" y="344" text="Trier Par :" measuredWidth="59" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="55" x="256" y="304" measuredWidth="32" measuredHeight="32" icon="busy-cursor (large)"/>
+  <widgets xsi:type="model:ProgressBar" id="56" x="296" y="311" measuredWidth="100" measuredHeight="18"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

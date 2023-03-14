@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="15" x="224" y="216" width="569" height="401" text="Browser&#xA;http://localhost/api/clients/add" measuredWidth="569" measuredHeight="401">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Window" id="16" x="352" y="320" width="345" height="265" text="Ajout de Client" measuredWidth="345" measuredHeight="265"/>
+  <widgets xsi:type="model:Label" id="18" x="374" y="392" text="Numero Carte" measuredWidth="81" measuredHeight="23" foreground="#674ea7">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="19" x="400" y="544" text="Suivant" measuredWidth="59" measuredHeight="25" background="#93c47d" link="Page6.screen" style="pointright">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="20" x="575" y="544" text="Retour" measuredWidth="55" measuredHeight="25" background="#e06666" link="Page4.screen" style="pointleft">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="22" x="373" y="352" text="Nom Carte" measuredWidth="64" measuredHeight="23" foreground="#674ea7">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="25" x="466" y="392" width="211" measuredWidth="211" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="26" x="376" y="432" text="EXP" measuredWidth="26" measuredHeight="23" foreground="#674ea7">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:HSlider" id="27" x="466" y="558" measuredWidth="100" measuredHeight="17" value="100"/>
+  <widgets xsi:type="model:Menu" id="28" x="224" y="268" width="569" text=" &amp;Acceuil,~&amp;Listes Produits~,~&amp;Les Transactions~,~&amp;Promotions~,  ~&amp;Profils~" measuredWidth="569" measuredHeight="27" selection="0" icon="fire (small)">
+    <items link="../../Header/Acceuil/Acceuil(N).screen" x="26" y="0" width="53" height="27" text=" &amp;Acceuil"/>
+    <items x="79" y="0" width="87" height="27" text="~&amp;Listes Produits~"/>
+    <items x="166" y="0" width="96" height="27" text="~&amp;Les Transactions~"/>
+    <items x="262" y="0" width="73" height="27" text="~&amp;Promotions~"/>
+    <items x="335" y="0" width="47" height="27" text=" ~&amp;Profils~"/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="32" x="512" y="472" width="160" measuredWidth="160" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="34" x="458" y="512" width="183" measuredWidth="183" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="35" x="376" y="512" text="Phrase Secret" measuredWidth="76" measuredHeight="23" foreground="#674ea7">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:DateField" id="38" x="401" y="432" text="  /  /  " measuredWidth="58" measuredHeight="23"/>
+  <widgets xsi:type="model:Label" id="39" x="471" y="432" text="Code Securité" measuredWidth="79" measuredHeight="23" foreground="#674ea7">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="40" x="377" y="472" text="ZIP/Code Postal" measuredWidth="91" measuredHeight="23" foreground="#674ea7">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="42" x="565" y="432" width="112" measuredWidth="112" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Spinner" id="43" x="648" y="512" text="25" measuredWidth="37" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Combo" id="45" x="454" y="350" width="163" text="Visa" measuredWidth="163" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="46" x="629" y="351" text="Autre" measuredWidth="49" measuredHeight="25">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
