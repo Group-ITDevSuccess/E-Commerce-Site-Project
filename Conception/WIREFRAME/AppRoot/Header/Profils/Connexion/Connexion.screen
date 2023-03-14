@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="224" y="216" width="569" height="401" text="Browser&#xA;http://localhost/api/clients/add" measuredWidth="569" measuredHeight="401">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Menu" id="2" x="224" y="268" width="569" text=" &amp;Acceuil,~&amp;Listes Produits~,~&amp;Les Transactions~,~&amp;Promotions~,  ~&amp;Profils~" measuredWidth="569" measuredHeight="27" selection="0" icon="fire (small)">
+    <items x="26" y="0" width="53" height="27" text=" &amp;Acceuil"/>
+    <items x="79" y="0" width="87" height="27" text="~&amp;Listes Produits~"/>
+    <items x="166" y="0" width="96" height="27" text="~&amp;Les Transactions~"/>
+    <items x="262" y="0" width="73" height="27" text="~&amp;Promotions~"/>
+    <items x="335" y="0" width="47" height="27" text=" ~&amp;Profils~"/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="4" x="771" y="410" height="207" measuredWidth="17" measuredHeight="207"/>
+  <widgets xsi:type="model:Window" id="28" x="356" y="307" width="305" height="254" text="Connexion" measuredWidth="305" measuredHeight="254"/>
+  <widgets xsi:type="model:TextField" id="29" x="472" y="385" width="169" measuredWidth="169" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="30" x="384" y="385" text="Pseudo/EMail" measuredWidth="79" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Switch" id="31" x="474" y="456" text="ON,OFF" measuredWidth="70" measuredHeight="23" selected="true" background="#3d85c6">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="32" x="405" y="456" text="Client" measuredWidth="37" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="33" x="592" y="456" text="Client" measuredWidth="37" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="34" x="472" y="422" width="169" measuredWidth="169" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="35" x="384" y="422" text="Mot de Passe" measuredWidth="76" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="36" x="384" y="495" text="Valider" measuredWidth="55" measuredHeight="25" link="../../Acceuil/Connecter/Acceuil(Y).screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="37" x="583" y="495" text="Retour" measuredWidth="55" measuredHeight="25" link="../../Acceuil/Acceuil(N).screen">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Icon" id="38" x="505" y="336" measuredWidth="32" measuredHeight="32" icon="user (large)"/>
+  <widgets xsi:type="model:Link" id="39" x="536" y="528" text="Mot de Passe Oublier" measuredWidth="115" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

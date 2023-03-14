@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="5" x="224" y="216" width="569" height="401" text="Browser&#xA;http://localhost/api/clients/add" measuredWidth="569" measuredHeight="401">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Menu" id="6" x="224" y="268" width="569" text=" &amp;Acceuil,&amp;Listes Produits,&amp;Les Transactions,&amp;Promotions,  &amp;Profils" measuredWidth="569" measuredHeight="27" selection="4" icon="fire (small)">
+    <items link="../Acceuil/Connecter/Acceuil(Y).screen" x="26" y="0" width="53" height="27" text=" &amp;Acceuil"/>
+    <items link="../Listes%20Produit/Liste%20Produit.screen" x="79" y="0" width="87" height="27" text="&amp;Listes Produits"/>
+    <items x="166" y="0" width="96" height="27" text="&amp;Les Transactions"/>
+    <items x="262" y="0" width="73" height="27" text="&amp;Promotions"/>
+    <items link="Profils(N).screen" x="335" y="0" width="47" height="27" text=" &amp;Profils"/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="7" x="771" y="294" height="323" measuredWidth="17" measuredHeight="323"/>
+  <widgets xsi:type="model:List" id="10" x="560" y="294" text="|Compte&#xA;Aide&#xA;(bg:red)|Deconnecter" measuredWidth="78" measuredHeight="67">
+    <font/>
+    <items x="0" y="2" width="78" height="21" text="|Compte"/>
+    <items x="0" y="23" width="78" height="21" text="Aide"/>
+    <items link="Deconnexion/Deconnexion.screen" x="0" y="44" width="78" height="21" text="(bg:red)|Deconnecter"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="11" x="490" y="340" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Text" id="12" x="224" y="408" width="548" height="120" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." measuredWidth="548" measuredHeight="120">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

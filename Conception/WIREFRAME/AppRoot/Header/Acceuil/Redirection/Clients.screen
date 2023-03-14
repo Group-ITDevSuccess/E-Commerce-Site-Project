@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" x="224" y="216" width="569" height="401" text="Browser&#xA;http://localhost/api/clients/add" measuredWidth="569" measuredHeight="401" background="#999" alpha="128">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tabs" id="3" x="229" y="384" width="559" text="Alimentation,Beauté et santé,Électronique et technologie,Maison et jardin,Mode et accessoires" measuredWidth="559" measuredHeight="27" selection="0">
+    <items x="1" y="0" width="90" height="27" text="Alimentation"/>
+    <items x="91" y="0" width="101" height="27" text="Beauté et santé"/>
+    <items x="192" y="0" width="166" height="27" text="Électronique et technologie"/>
+    <items x="358" y="0" width="106" height="27" text="Maison et jardin"/>
+    <items x="464" y="0" width="127" height="27" text="Mode et accessoires"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:VScrollbar" id="4" x="771" y="410" height="207" measuredWidth="17" measuredHeight="207"/>
+  <widgets xsi:type="model:TextArea" id="5" x="267" y="294" width="484" text="*Bienvenue* sur notre site de e-commerce !&#xD;&#xA; Nous sommes heureux de vous présenter notre sélection de produits de qualité.&#xD;&#xA; _Inscrivez-vous_ dès maintenant pour profiter de notre offre exclusive." measuredWidth="484" measuredHeight="53" background="#999" alpha="128" borderColor="#999">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="6" x="466" y="352" text="S'Enregistrer" measuredWidth="85" measuredHeight="25" background="#999">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="7" x="248" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="8" x="304" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="9" x="368" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="10" x="432" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="11" x="488" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="12" x="544" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="13" x="608" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="14" x="672" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="728" y="448" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="248" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="17" x="304" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="18" x="368" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="19" x="432" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="20" x="488" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="21" x="544" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="22" x="608" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="23" x="672" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="24" x="728" y="536" text="Label" measuredWidth="32" measuredHeight="58" textAlignment="Center" icon="image (large)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Alert" id="27" x="360" y="392" width="336" text="Faite Votre Choix&#xA;S'enregistrer en tanque que :&#xA;  Return,Client,Utilisateur" measuredWidth="336" measuredHeight="132" icon="warning (large)">
+    <items link="../Acceuil(N).screen" x="51" y="93" width="80" height="24" text="  Return"/>
+    <items link="../../../Body/Clients/Page1.screen" x="146" y="93" width="80" height="24" text="Client"/>
+    <items x="241" y="93" width="80" height="24" text="Utilisateur"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Menu" id="28" x="224" y="268" width="569" text=" &amp;Acceuil,~&amp;Listes Produits~,~&amp;Les Transactions~,~&amp;Promotions~,  ~&amp;Profils~" measuredWidth="569" measuredHeight="27" selection="0" icon="fire (small)">
+    <items link="../Acceuil(N).screen" x="26" y="0" width="53" height="27" text=" &amp;Acceuil"/>
+    <items x="79" y="0" width="87" height="27" text="~&amp;Listes Produits~"/>
+    <items x="166" y="0" width="96" height="27" text="~&amp;Les Transactions~"/>
+    <items x="262" y="0" width="73" height="27" text="~&amp;Promotions~"/>
+    <items x="335" y="0" width="47" height="27" text=" ~&amp;Profils~"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
