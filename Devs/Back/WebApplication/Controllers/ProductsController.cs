@@ -21,7 +21,7 @@ namespace WebApplication.Controllers
         }
         [HttpGet]
         [Route("api/products")]
-        public virtual async Task<HttpResponseMessage> GetAllProducts()
+        public async Task<HttpResponseMessage> GetAllProducts()
         {
             var allProducts = await _productRepository.GetAll();
 
@@ -30,7 +30,7 @@ namespace WebApplication.Controllers
 
         [HttpPost]
         [Route("api/products/add")]
-        public virtual HttpResponseMessage AddProduct([FromBody] ProductsReq productInput)
+        public HttpResponseMessage AddProduct([FromBody] ProductsReq productInput)
         {
             Products value = new Products();
             value.ProductName = productInput.ProductName;

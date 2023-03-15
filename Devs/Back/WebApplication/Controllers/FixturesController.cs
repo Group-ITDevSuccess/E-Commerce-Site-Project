@@ -13,7 +13,7 @@ namespace WebApplication.Controllers
     {
         [HttpGet]
         [Route("api/fixtures/add")]
-        public virtual async Task<HttpResponseMessage> AddFixture()
+        public async Task<HttpResponseMessage> AddFixture()
         {
             try
             {

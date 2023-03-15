@@ -23,7 +23,7 @@ namespace WebApplication.Controllers
 
         [HttpGet]
         [Route("api/card_types")]
-        public virtual async Task<HttpResponseMessage> GetAllCardTypes()
+        public async Task<HttpResponseMessage> GetAllCardTypes()
         {
             var allCardTypes = await _cardTypesRepository.GetAll();
             return Request.CreateResponse(HttpStatusCode.OK, allCardTypes);

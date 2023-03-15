@@ -22,7 +22,7 @@ namespace WebApplication.Controllers
 
         [HttpGet]
         [Route("api/clients")]
-        public virtual async Task<HttpResponseMessage> GetAllClients()
+        public async Task<HttpResponseMessage> GetAllClients()
         {
             //EntityRepository<Clients> value = new EntityRepository<Clients>();
             

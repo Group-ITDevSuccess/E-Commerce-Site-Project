@@ -21,7 +21,7 @@ namespace WebApplication.Controllers
 
         [HttpGet]
         [Route("api/bank_account")]
-        public virtual async Task<HttpResponseMessage> GetAllBankAccount()
+        public async Task<HttpResponseMessage> GetAllBankAccount()
         {
             var allBankAccount = await ((BankAccountRepository)_bankAccountsRepository).GetAll();
 
