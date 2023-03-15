@@ -4,10 +4,26 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './components/header/navbar/navbar.component';
+import { SocialsComponent } from './components/footer/socials/socials.component';
+import { BropdownComponent } from './components/header/bropdown/bropdown.component';
+import { HomeComponent } from './components/body/home/home.component';
+import { ProductsComponent } from './components/body/products/products.component';
+import { TransactionsComponent } from './components/body/transactions/transactions.component';
+import { PromotionsComponent } from './components/body/promotions/promotions.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
+    SocialsComponent,
+    BropdownComponent,
+    HomeComponent,
+    ProductsComponent,
+    TransactionsComponent,
+    PromotionsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
