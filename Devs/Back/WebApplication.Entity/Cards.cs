@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace WebApplication.Entity
 {
@@ -13,6 +14,7 @@ namespace WebApplication.Entity
         public virtual string Number { get; set; }
         public virtual string PassWord { get; set; }
         public virtual DateTime DateCreation { get; set; }
+        public virtual Agence Agence { get; set; }
 
         private static string GenerateCardNumber()
         {

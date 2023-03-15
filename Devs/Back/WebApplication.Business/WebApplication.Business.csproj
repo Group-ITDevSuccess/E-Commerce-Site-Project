@@ -129,6 +129,7 @@
   <ItemGroup>
     <Compile Include="AccountRepository.cs" />
     <Compile Include="AddressClientRepository.cs" />
+    <Compile Include="AgenceRepository.cs" />
     <Compile Include="BankAccountRepository.cs" />
     <Compile Include="BrandsRepository.cs" />
     <Compile Include="CardsRepository.cs" />

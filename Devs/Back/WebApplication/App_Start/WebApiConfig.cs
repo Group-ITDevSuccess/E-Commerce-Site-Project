@@ -42,6 +42,7 @@ namespace WebApplication
             container.RegisterType<EntityRepository<BankAccount>, BankAccountRepository>();
             container.RegisterType<EntityRepository<Cards>, CardsRepository>();
             container.RegisterType<EntityRepository<CardTypes>, CardTypesRepository>();
+            container.RegisterType<EntityRepository<Agence>, AgenceRepository>();
         }
     }
 }

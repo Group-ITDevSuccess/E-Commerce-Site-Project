@@ -30,6 +30,11 @@ namespace WebApplication.Entity.Mapping
                 .Not.Nullable()
                 /* .CustomType("datetime2")
                  .Column("CreationDate");*/;
+
+            References(x => x.Agence)
+                /*.Cascade.SaveUpdate()*/
+                
+                .Not.LazyLoad();
         }
     }
 }

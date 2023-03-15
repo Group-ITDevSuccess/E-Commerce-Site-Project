@@ -99,5 +99,25 @@ namespace WebApplication.Business
                 }
             }
         }
+
+        public async Task Delete(T entity)
+        {
+            using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
+            {
+                using (ITransaction transaction = session.BeginTransaction())
+                {
+                    try
+                    {
+                        await session.DeleteAsync(entity);
+                        transaction.Commit();
+                    }
+                    catch (Exception e)
+                    {
+                        transaction.Rollback();
+                        throw e;
+                    }
+                }
+            }
+        }
     }
 }

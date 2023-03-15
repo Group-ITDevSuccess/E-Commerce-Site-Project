@@ -129,6 +129,7 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="AddressClients.cs" />
+    <Compile Include="Agence.cs" />
     <Compile Include="BankAccount.cs" />
     <Compile Include="Brand.cs" />
     <Compile Include="Cards.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Entity.cs" />
     <Compile Include="Mapping\AccountMap.cs" />
     <Compile Include="Mapping\AddressClientsMap.cs" />
+    <Compile Include="Mapping\AgenceMap.cs" />
     <Compile Include="Mapping\BankAccountMap.cs" />
     <Compile Include="Mapping\BrandMap.cs" />
     <Compile Include="Mapping\CardsMap.cs" />
@@ -152,6 +154,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AccountReq.cs" />
     <Compile Include="Services\AddressClientsReq.cs" />
+    <Compile Include="Services\AgenceReq.cs" />
     <Compile Include="Services\BankAccountReq.cs" />
     <Compile Include="Services\BrandReq.cs" />
     <Compile Include="Services\CardsReq.cs" />
