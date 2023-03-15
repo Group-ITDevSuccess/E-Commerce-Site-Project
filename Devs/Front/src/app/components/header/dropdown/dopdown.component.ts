@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-bropdown',
-  templateUrl: './bropdown.component.html',
-  styleUrls: ['./bropdown.component.css']
+  selector: 'app-dropdown',
+  templateUrl: './dropdown.component.html',
+  styleUrls: ['./dropdown.component.css']
 })
-export class BropdownComponent implements OnInit {
+export class DropdownComponent implements OnInit {
   isOpen = false;
 
   constructor() { }
