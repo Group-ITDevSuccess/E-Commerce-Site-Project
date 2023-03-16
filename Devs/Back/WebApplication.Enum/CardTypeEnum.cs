@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebApplication.Enum
 {
-    public enum CardTypeEnum
+    public enum CardTypeEnum 
     {
         Visa,
         Mastercard,

@@ -8,6 +8,7 @@ using System.Web.Http;
 using WebApplication.Business;
 using WebApplication.Entity;
 using WebApplication.Entity.Services;
+using WebApplication.Enum;
 
 namespace WebApplication.Controllers
 {
@@ -15,14 +16,17 @@ namespace WebApplication.Controllers
     {
         private EntityRepository<Cards> _cardsRepository = null;
         private EntityRepository<Agence> _agenceRepository = null;
+        private EntityRepository<CardTypes> _cardTypesRepository = null;
 
         public CardsController(
             EntityRepository<Cards> cardsRepository,
-            EntityRepository<Agence> agenceRepository
+            EntityRepository<Agence> agenceRepository,
+            EntityRepository<CardTypes> cardTypesRepository
             )
         {
             _cardsRepository = cardsRepository;
             _agenceRepository = agenceRepository;
+            _cardTypesRepository = cardTypesRepository;
         }
 
         [HttpGet]
@@ -34,7 +38,7 @@ namespace WebApplication.Controllers
         }
 
         [HttpPost]
-        [Route("api/cards/assign")]
+        [Route("api/cards/agence")]
         public async Task<HttpResponseMessage> AssignCardsAgence([FromUri] Guid idAgence, [FromBody] CardsReq cardInput)
         {
             var specificalAgence = await _agenceRepository.GetById(idAgence);
@@ -51,6 +55,29 @@ namespace WebApplication.Controllers
             _agenceRepository.SaveOrUpdate(specificalAgence);
 
             return Request.CreateResponse(HttpStatusCode.OK, $"Carte assigner à {specificalAgence.Name}");
+        }
+
+        [HttpPost]
+        [Route("api/cards/types")]
+        public async Task<HttpResponseMessage> AssignTypeCards([FromUri] Guid idCard, [FromBody] CardTypesReq typeInput)
+        {
+            var specificalCards = await _cardsRepository.GetById(idCard);
+
+            if (specificalCards == null)
+                return Request.CreateResponse(HttpStatusCode.NotFound,
+                    "Carte Introuvable, impossible d'assigner de type à la carte");
+
+            CardTypes value = new CardTypes
+            {
+                CardType = typeInput.CardTypes
+            };
+
+            specificalCards.CardType = value;
+
+
+             _cardsRepository.SaveOrUpdate(specificalCards);
+            
+            return Request.CreateResponse(HttpStatusCode.OK, $"Type assigner à la Carte {specificalCards.Number}");
         }
 
 

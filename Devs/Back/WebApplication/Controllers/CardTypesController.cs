@@ -28,5 +28,6 @@ namespace WebApplication.Controllers
             var allCardTypes = await _cardTypesRepository.GetAll();
             return Request.CreateResponse(HttpStatusCode.OK, allCardTypes);
         }
+
     }
 }

@@ -1,5 +1,4 @@
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\bin\Debug\WebApplication.Enum.dll.config
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\bin\Debug\WebApplication.Enum.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\bin\Debug\WebApplication.Enum.pdb
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\bin\Debug\Antlr3.Runtime.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\bin\Debug\BouncyCastle.Crypto.dll
@@ -54,3 +53,4 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\obj\Debug\WebApplication.Enum.csproj.CopyComplete
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\obj\Debug\WebApplication.Enum.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\obj\Debug\WebApplication.Enum.pdb
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Enum\bin\Debug\System.Runtime.dll

@@ -12,6 +12,7 @@ using System.Net.Http.Headers;
 using System.Web.Http.Description;
 using System.Xml.Linq;
 using Newtonsoft.Json;
+using WebApplication.Enum;
 
 namespace WebApplication.Areas.HelpPage
 {
@@ -233,7 +234,7 @@ namespace WebApplication.Areas.HelpPage
         [SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification = "This is only used in advanced scenarios.")]
         public virtual Type ResolveType(ApiDescription api, string controllerName, string actionName, IEnumerable<string> parameterNames, SampleDirection sampleDirection, out Collection<MediaTypeFormatter> formatters)
         {
-            if (!Enum.IsDefined(typeof(SampleDirection), sampleDirection))
+            if (!System.Enum.IsDefined(typeof(SampleDirection), sampleDirection))
             {
                 throw new InvalidEnumArgumentException("sampleDirection", (int)sampleDirection, typeof(SampleDirection));
             }

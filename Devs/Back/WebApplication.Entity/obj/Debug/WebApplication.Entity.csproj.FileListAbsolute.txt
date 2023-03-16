@@ -12,7 +12,9 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Cors.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\MySql.Data.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Newtonsoft.Json.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\NHibernate.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\NHibernate.Mapping.Attributes.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Owin.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Remotion.Linq.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Remotion.Linq.EagerFetching.dll
@@ -24,7 +26,10 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Web.Cors.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Ubiety.Dns.Core.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Enum.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\ZstdNet.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Enum.pdb
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Enum.dll.config
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Antlr3.Runtime.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\FluentNHibernate.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Google.Protobuf.pdb
@@ -36,7 +41,9 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Cors.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\MySql.Data.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Newtonsoft.Json.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\NHibernate.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\NHibernate.Mapping.Attributes.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Remotion.Linq.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Remotion.Linq.EagerFetching.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Renci.SshNet.xml
@@ -50,62 +57,4 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.csproj.CopyComplete
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.pdb
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Entity.dll.config
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Entity.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Entity.pdb
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Antlr3.Runtime.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\BouncyCastle.Crypto.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\FluentNHibernate.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Google.Protobuf.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Iesi.Collections.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\K4os.Compression.LZ4.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\K4os.Compression.LZ4.Streams.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\K4os.Hash.xxHash.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Cors.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\MySql.Data.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\NHibernate.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Owin.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Remotion.Linq.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Remotion.Linq.EagerFetching.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Renci.SshNet.Async.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Renci.SshNet.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Buffers.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Memory.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Numerics.Vectors.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Web.Cors.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Ubiety.Dns.Core.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\ZstdNet.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Antlr3.Runtime.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\FluentNHibernate.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Google.Protobuf.pdb
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Google.Protobuf.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Iesi.Collections.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\K4os.Compression.LZ4.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\K4os.Compression.LZ4.Streams.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\K4os.Hash.xxHash.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Cors.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\MySql.Data.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\NHibernate.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Remotion.Linq.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Remotion.Linq.EagerFetching.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Renci.SshNet.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Renci.SshNet.Async.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Buffers.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Memory.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Numerics.Vectors.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.csproj.AssemblyReference.cache
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.csproj.CoreCompileInputs.cache
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.csproj.CopyComplete
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.dll
-D:\WEB\BitBucket\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.pdb
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Newtonsoft.Json.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Newtonsoft.Json.xml
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\NHibernate.Mapping.Attributes.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Enum.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Enum.pdb
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\WebApplication.Enum.dll.config
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\NHibernate.Mapping.Attributes.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Runtime.dll

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,7 @@ namespace WebApplication.Entity
     public class CardTypes : Entity
     {
         public virtual CardTypeEnum CardType { get; set; }
+        /*[JsonIgnore]
+        public virtual IList<Cards> Cards { get; set; }*/
     }
 }

@@ -14,25 +14,23 @@ namespace WebApplication.Entity.Mapping
             Abstract();
 
             Map(x => x.Number)
-                /*.Access.ReadOnly()
-                .Generated.Insert()*/
                 .Not.Nullable()
-                /*.Unique()
-                .Length(16);*/;
+                .Unique()
+                .Length(16);
 
             Map(x => x.PassWord)
                 .Not.Nullable()
-               /* .Length(50);*/;
+                .Length(4);
 
             Map(x => x.DateCreation)
-                /*.Access.ReadOnly()
-                .Generated.Insert()*/
-                .Not.Nullable()
-                /* .CustomType("datetime2")
-                 .Column("CreationDate");*/;
+                .Not.Nullable();
 
             References(x => x.Agence)
                 /*.Cascade.SaveUpdate()*/
+                .Not.LazyLoad();
+
+            References(x => x.CardType)
+                .Cascade.SaveUpdate()
                 .Not.LazyLoad();
         }
     }
