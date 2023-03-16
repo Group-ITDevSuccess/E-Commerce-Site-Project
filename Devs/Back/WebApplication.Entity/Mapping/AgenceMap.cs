@@ -15,9 +15,8 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.Name).Not.Nullable();
             Map(x => x.Denomination).Not.Nullable();
             HasMany(x => x.Cards)
-                /*.Cascade.SaveUpdate()*/
-                .Inverse()
-                .Cascade.SaveUpdate()
+                /*.Inverse()*/
+                .Cascade.All()
                 .Not.LazyLoad();
         }
     }

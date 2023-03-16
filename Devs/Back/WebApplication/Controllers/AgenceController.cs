@@ -52,17 +52,38 @@ namespace WebApplication.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("api/agences/cards")]
+        public async Task<HttpResponseMessage> GetCardsByAgenceId([FromUri]Guid idAgence)
+        {
+            var agence = await _agenceRepository.GetById(idAgence);
+            if (agence == null)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound, $"Agence avec ID {idAgence} introuvable.");
+            }
+
+            var cards = ((CardsRepository)_cardsRepository).GetByAgenceId(idAgence);
+            return Request.CreateResponse(HttpStatusCode.OK, cards);
+        }
+
         [HttpDelete]
         [Route("api/agences/delete")]
-        public async Task<HttpResponseMessage> DeleteCard([FromUri] Guid idCard)
+        public async Task<HttpResponseMessage> DeleteAgence([FromUri] Guid idAgence)
         {
-            var specificalCard = await _cardsRepository.GetById(idCard);
-            if (specificalCard == null)
-                return Request.CreateResponse(HttpStatusCode.NotFound,
-                    "Carte Introuvable, impossible de supprimer la carte");
 
-            await _cardsRepository.DeleteById(idCard);
-            return Request.CreateResponse(HttpStatusCode.OK, $"Carte de Numéro {specificalCard.Number} est supprimer !");
+            var agenceToDelete = await _agenceRepository.GetById(idAgence);
+            if (agenceToDelete == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Agence introuvable, impossible de supprimier l'agence");
+
+            var cardsToDelete = ((CardsRepository)_cardsRepository).GetByAgenceId(idAgence);
+
+            foreach (var card in cardsToDelete)
+            {
+                await _cardsRepository.Delete(card);
+            }
+
+            return Request.CreateResponse(HttpStatusCode.OK, $"Tout les cartes associer au Agence {agenceToDelete.Name} sont supprimier");
         }
+
+
     }
 }

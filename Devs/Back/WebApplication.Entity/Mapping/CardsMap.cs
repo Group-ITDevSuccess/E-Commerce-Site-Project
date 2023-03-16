@@ -33,7 +33,6 @@ namespace WebApplication.Entity.Mapping
 
             References(x => x.Agence)
                 /*.Cascade.SaveUpdate()*/
-                
                 .Not.LazyLoad();
         }
     }

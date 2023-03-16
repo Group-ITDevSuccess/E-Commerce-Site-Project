@@ -53,6 +53,19 @@ namespace WebApplication.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, $"Carte assigner à {specificalAgence.Name}");
         }
 
-        
+
+        [HttpDelete]
+        [Route("api/cards/delete")]
+        public async Task<HttpResponseMessage> DeleteCard([FromUri] Guid idCard)
+        {
+            var specificalCard = await _cardsRepository.GetById(idCard);
+            if (specificalCard == null)
+                return Request.CreateResponse(HttpStatusCode.NotFound,
+                    "Carte Introuvable, impossible de supprimer la carte");
+
+            await _cardsRepository.Delete(specificalCard);
+            return Request.CreateResponse(HttpStatusCode.OK, $"Carte de Numéro {specificalCard.Number} est supprimer !");
+        }
+
     }
 }
