@@ -12,6 +12,6 @@ namespace WebApplication.Entity.Services
         public string LastNameClient { get; set; }
         public DateTime BirthDayClient { get; set; }
         public bool GenreClient { get; set; }
-        public AddressClientsReq AddressClient {get; set;}
+        public AddressClients AddressClient {get; set;}
     }
 }

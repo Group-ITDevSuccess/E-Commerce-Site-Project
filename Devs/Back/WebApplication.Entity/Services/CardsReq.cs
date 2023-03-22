@@ -10,8 +10,8 @@ namespace WebApplication.Entity.Services
     {
         public string Number { get; set; }
         public string PassWord { get; set; }
-        public DateTime ExpirationDate { get; set; }
-        public string CardholderName { get; set; }
+        public DateTime DateCreation { get; set; }
+        public virtual CardTypes CardType { get; set; }
 
         public bool IsPasswordCorrect(CardsReq request)
         {

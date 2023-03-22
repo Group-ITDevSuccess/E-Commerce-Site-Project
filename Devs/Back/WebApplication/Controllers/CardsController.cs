@@ -45,6 +45,7 @@ namespace WebApplication.Controllers
             if (specificalAgence == null)
                 return Request.CreateResponse(HttpStatusCode.NotFound,
                     "Agence Introuvable, impossible d'assigner de la carte");
+
             var cards = new Cards
             {
                 PassWord = cardInput.PassWord,
@@ -66,13 +67,11 @@ namespace WebApplication.Controllers
             if (specificalCards == null)
                 return Request.CreateResponse(HttpStatusCode.NotFound,
                     "Carte Introuvable, impossible d'assigner de type à la carte");
-
-            CardTypes value = new CardTypes
-            {
-                CardType = typeInput.CardTypes
-            };
-
-            specificalCards.CardType = value;
+            var specificalCardTypes = ((CardTypesRepository)_cardTypesRepository).FindCardTypesByName(typeInput.CardTypes);
+            if (specificalCardTypes == null)
+                return Request.CreateResponse(HttpStatusCode.NotFound,
+                    "Type Carte Introuvable, impossible d'assigner de type à la carte");
+            specificalCards.CardType = specificalCardTypes;
 
 
              _cardsRepository.SaveOrUpdate(specificalCards);

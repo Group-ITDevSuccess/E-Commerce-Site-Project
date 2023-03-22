@@ -44,7 +44,7 @@ namespace WebApplication.Controllers
                 return Request.CreateResponse(HttpStatusCode.NotFound,
                     "Utilisateur Introuvable, impossible d'assigner de compte");
 
-            var account = new Account
+            findClient.Account = new Account
             {
                 Pseudo = accountInput.Pseudo,
                 Email = accountInput.Email,
@@ -52,7 +52,6 @@ namespace WebApplication.Controllers
                 Client = findClient
             };
 
-            findClient.Account.Add(account);
             _clientsRepository.SaveOrUpdate(findClient);
 
             return Request.CreateResponse(HttpStatusCode.OK, $"Compte Assigner à {findClient.FirstNameClient}");

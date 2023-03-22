@@ -34,10 +34,10 @@ namespace WebApplication.Entity.Mapping
                 .Cascade.All()
                 .Not.LazyLoad();
 
-            HasMany(x => x.Account)
-                .Inverse()
+            References(x => x.Account)
                 .Cascade.All()
                 .Not.LazyLoad();
+
         }
     }
 }
