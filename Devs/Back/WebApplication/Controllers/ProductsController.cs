@@ -14,10 +14,15 @@ namespace WebApplication.Controllers
     public class ProductsController : ApiController
     {
         private EntityRepository<Products> _productRepository = null;
+        private EntityRepository<Users> _usersRepository = null;
 
-        public ProductsController(EntityRepository<Products> productRepository)
+        public ProductsController(
+            EntityRepository<Products> productRepository,
+            EntityRepository<Users> usersRepository
+            )
         {
             _productRepository = productRepository;
+            _usersRepository = usersRepository;
         }
         [HttpGet]
         [Route("api/products")]
@@ -57,6 +62,8 @@ namespace WebApplication.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, 
                     $"Erreur lors de l'enregistrement du Produit : {e.Message}");
             }
-        }  
+        }
+
+        
     }
 }
