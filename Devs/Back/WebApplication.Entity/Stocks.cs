@@ -12,6 +12,6 @@ namespace WebApplication.Entity
         public virtual string Quantite { get; set; }
         public virtual string Remarque { get; set; }
         [JsonIgnore]
-        public virtual IList<Products> Product { get; set; }
+        public virtual Products Product { get; set; }
     }
 }

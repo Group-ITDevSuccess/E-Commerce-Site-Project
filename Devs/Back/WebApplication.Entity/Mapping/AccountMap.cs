@@ -15,11 +15,6 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.Pseudo).Not.Nullable();
             Map(x => x.Email).Not.Nullable();
             Map(x => x.PassWord).Not.Nullable();
-
-            References(x => x.Client)
-            .Column("ClientId")
-            .Cascade.None()
-            .Not.LazyLoad();
         }
     }
 }

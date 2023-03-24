@@ -64,6 +64,13 @@ namespace WebApplication.Controllers
                 Postal_Code = clientInput.AddressClient.Postal_Code,
             };
 
+            client.Account = new Accounts
+            {
+                Pseudo = clientInput.AccountClient.Pseudo,
+                Email = clientInput.AccountClient.Email,
+                PassWord = clientInput.AccountClient.PassWord,
+            };
+
             try
             {
                 _clientRepository.SaveOrUpdate(client);

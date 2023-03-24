@@ -37,6 +37,7 @@ namespace WebApplication.Controllers
         [Route("api/contacts/assign")]
         public async Task<HttpResponseMessage> AssignContact([FromUri] Guid idClient, [FromBody] ContactsReq contactsInput)
         {
+            Console.WriteLine(idClient);
             var findClient = await _clientsRepository.GetById(idClient);
 
             if (findClient == null)
@@ -47,7 +48,7 @@ namespace WebApplication.Controllers
             var constact = new Contacts
             {
                 Phone = contactsInput.Phone,
-                Email = contactsInput.Email,
+                DateCreation = contactsInput.DateCreation,
                 Client = findClient
             };
 

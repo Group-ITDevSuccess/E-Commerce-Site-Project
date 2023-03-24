@@ -42,15 +42,17 @@ namespace WebApplication.Controllers
             var stock = new Stocks
             {
                 Quantite = stockInput.Quantite,
-                Remarque = stockInput.Remarque
+                Remarque = stockInput.Remarque,
+                Product = productSpecific
             };
 
             productSpecific.Stock = new List<Stocks> { stock };
 
+            /*stock.Product = new List<Products> { productSpecific };*/
 
-            stock.Product = new List<Products> { productSpecific };
+            productSpecific.Stock.Add(stock);
 
-            _stocksRepository.SaveOrUpdate(stock);
+            /*_stocksRepository.SaveOrUpdate(stock);*/
             _productsRepository.SaveOrUpdate(productSpecific);
 
 

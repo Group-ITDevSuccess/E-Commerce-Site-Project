@@ -14,13 +14,11 @@ namespace WebApplication.Entity.Mapping
             Abstract();
             Map(x => x.Quantite).Not.Nullable();
             Map(x => x.Remarque).Nullable();
-
-            HasManyToMany<Products>(x => x.Product)
-                .Table("Ligne_Publication")
-                .Cascade.All()
-                .Inverse()
-                .Not.LazyLoad();
-
+            
+            References(x => x.Product)
+            .Column("ProductId")
+            .Cascade.None()
+            .Not.LazyLoad();
         }
     }
 }

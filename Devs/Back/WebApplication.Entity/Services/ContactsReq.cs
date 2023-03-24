@@ -10,7 +10,7 @@ namespace WebApplication.Entity.Services
     public class ContactsReq
     {
         public virtual string Phone { get; set; }
-        public virtual string Email { get; set; }
+        public virtual DateTime DateCreation { get; set; }
         
     }
 }

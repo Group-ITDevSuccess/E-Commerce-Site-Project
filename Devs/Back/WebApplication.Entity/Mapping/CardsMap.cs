@@ -12,7 +12,6 @@ namespace WebApplication.Entity.Mapping
         public CardsMap()
         {
             Abstract();
-
             Map(x => x.Number)
                 .Not.Nullable()
                 .Unique()
@@ -26,10 +25,11 @@ namespace WebApplication.Entity.Mapping
                 .Not.Nullable();
 
             References(x => x.Agence)
-                /*.Cascade.SaveUpdate()*/
+                .Column("AgenceId")
                 .Not.LazyLoad();
 
             References(x => x.CardType)
+                .Column("CardTypeId")
                 .Cascade.SaveUpdate()
                 .Not.LazyLoad();
         }

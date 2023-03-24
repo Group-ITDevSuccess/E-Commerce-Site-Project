@@ -17,26 +17,18 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.BirthDayClient).Not.Nullable();
             Map(x => x.GenreClient).Not.Nullable();
 
-           /* HasMany<AddressClients>(x => x.AddressClient)
-                .Cascade.All()
-                .Not.LazyLoad();*/
-
             References(x => x.AddressClient)
+                .Column("AddressId")
                 .Cascade.All()
                 .Not.LazyLoad();
 
-            /*References<Contacts>(x => x.Contact)
-                .Cascade.SaveUpdate()
-                .Not.LazyLoad();*/
-
-
-            HasMany(x => x.Account)
-                .Inverse()
+            References(x => x.Account)
+                .Column("AccountId")
                 .Cascade.All()
                 .Not.LazyLoad();
 
             HasMany(x => x.Contact)
-                .Inverse()
+                /*.Inverse()*/
                 .Cascade.All()
                 .Not.LazyLoad();
         }

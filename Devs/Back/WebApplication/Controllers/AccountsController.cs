@@ -33,30 +33,5 @@ namespace WebApplication.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK, allAccount);
         }
-
-        [HttpPost]
-        [Route("api/accounts/assign")]
-        public async Task<HttpResponseMessage> AssignAccount([FromUri] Guid idClient, [FromBody] AccountReq accountInput)
-        {
-            var findClient = await _clientsRepository.GetById(idClient);
-
-            if (findClient == null)
-                return Request.CreateResponse(HttpStatusCode.NotFound,
-                    "Utilisateur Introuvable, impossible d'assigner de compte");
-
-            var accounts = new Accounts
-            {
-                Pseudo = accountInput.Pseudo,
-                Email = accountInput.Email,
-                PassWord = accountInput.PassWord,
-                Client = findClient
-            };
-
-            findClient.Account.Add(accounts);
-
-            _clientsRepository.SaveOrUpdate(findClient);
-
-            return Request.CreateResponse(HttpStatusCode.OK, $"Compte Assigner à {findClient.FirstNameClient}");
-        }
     }
 }

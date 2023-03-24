@@ -13,5 +13,6 @@ namespace WebApplication.Entity.Services
         public DateTime BirthDayClient { get; set; }
         public bool GenreClient { get; set; }
         public AddressClients AddressClient {get; set;}
+        public Accounts AccountClient { get; set;}
     }
 }

@@ -18,15 +18,18 @@ namespace WebApplication.Entity.Mapping
 
 
             References(x => x.BrandProduct)
+                .Column("BrandId")
                 .Cascade.All()
                 .Not.LazyLoad();
 
             References(x => x.CategorieProduct)
+                .Column("CategorieId")
                 .Cascade.All()
                 .Not.LazyLoad();
 
-            HasManyToMany<Stocks>(x => x.Stock)
-                .Table("Ligne_Publication")
+            HasMany(x => x.Stock)
+                .Inverse()
+                .Cascade.All()
                 .Not.LazyLoad();
         }
     }

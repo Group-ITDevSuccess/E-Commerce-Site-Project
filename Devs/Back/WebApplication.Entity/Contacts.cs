@@ -9,8 +9,12 @@ namespace WebApplication.Entity
 {
     public class Contacts : Entity
     {
+        public Contacts()
+        {
+            DateCreation = DateTime.Now;
+        }
         public virtual string Phone { get; set; }
-        public virtual string Email { get; set; }
+        public virtual DateTime DateCreation { get; set; }
         [JsonIgnore]
         public virtual Clients Client { get; set; }
     }

@@ -13,7 +13,7 @@ namespace WebApplication.Entity.Mapping
         {
             Abstract();
             Map(x => x.Phone).Not.Nullable();
-            Map(x => x.Email).Not.Nullable();
+            Map(x => x.DateCreation).Not.Nullable();
 
             References(x => x.Client)
             .Column("ClientId")
