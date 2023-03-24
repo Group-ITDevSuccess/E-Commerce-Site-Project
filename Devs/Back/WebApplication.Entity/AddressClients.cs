@@ -15,5 +15,6 @@ namespace WebApplication.Entity
         public virtual string Street { get; set; }
         public virtual string Batch { get; set; }
         public virtual string Postal_Code { get; set; }
+
     }
 }

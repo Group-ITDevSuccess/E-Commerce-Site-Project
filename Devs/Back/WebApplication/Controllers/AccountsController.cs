@@ -13,11 +13,11 @@ namespace WebApplication.Controllers
 {
     public class AccountsController : ApiController
     {
-        private EntityRepository<Account> _accountRepository = null;
+        private EntityRepository<Accounts> _accountRepository = null;
         private EntityRepository<Clients> _clientsRepository = null;
 
         public AccountsController(
-            EntityRepository<Account> accountRepository,
+            EntityRepository<Accounts> accountRepository,
             EntityRepository<Clients> clientsRepository
             )
         {
@@ -44,13 +44,15 @@ namespace WebApplication.Controllers
                 return Request.CreateResponse(HttpStatusCode.NotFound,
                     "Utilisateur Introuvable, impossible d'assigner de compte");
 
-            findClient.Account = new Account
+            var accounts = new Accounts
             {
                 Pseudo = accountInput.Pseudo,
                 Email = accountInput.Email,
                 PassWord = accountInput.PassWord,
                 Client = findClient
             };
+
+            findClient.Account.Add(accounts);
 
             _clientsRepository.SaveOrUpdate(findClient);
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebApplication.Entity
 {
-    public class Account : Entity
+    public class Accounts : Entity
     {
         public virtual string Pseudo { get; set; }
         public virtual string Email { get; set; }

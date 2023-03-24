@@ -18,9 +18,6 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.Street).Not.Nullable();
             Map(x => x.Batch).Not.Nullable();
             Map(x => x.Postal_Code).Not.Nullable();
-
-           /* References<Clients>(x => x.Client).Not.LazyLoad();*/
-
         }
     }
 }

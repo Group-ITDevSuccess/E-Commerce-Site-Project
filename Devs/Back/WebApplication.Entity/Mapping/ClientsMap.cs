@@ -16,11 +16,11 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.LastNameClient).Not.Nullable();
             Map(x => x.BirthDayClient).Not.Nullable();
             Map(x => x.GenreClient).Not.Nullable();
-/*
-            HasMany<AddressClients>(x => x.AddressClient)
+
+           /* HasMany<AddressClients>(x => x.AddressClient)
                 .Cascade.All()
-                .Not.LazyLoad();
-*/
+                .Not.LazyLoad();*/
+
             References(x => x.AddressClient)
                 .Cascade.All()
                 .Not.LazyLoad();
@@ -29,15 +29,16 @@ namespace WebApplication.Entity.Mapping
                 .Cascade.SaveUpdate()
                 .Not.LazyLoad();*/
 
-            HasMany(x => x.Contact)
+
+            HasMany(x => x.Account)
                 .Inverse()
                 .Cascade.All()
                 .Not.LazyLoad();
 
-            References(x => x.Account)
+            HasMany(x => x.Contact)
+                .Inverse()
                 .Cascade.All()
                 .Not.LazyLoad();
-
         }
     }
 }

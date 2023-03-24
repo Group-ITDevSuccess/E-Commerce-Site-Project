@@ -131,7 +131,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
+    <Compile Include="Accounts.cs" />
     <Compile Include="AddressClients.cs" />
     <Compile Include="Agence.cs" />
     <Compile Include="BankAccount.cs" />

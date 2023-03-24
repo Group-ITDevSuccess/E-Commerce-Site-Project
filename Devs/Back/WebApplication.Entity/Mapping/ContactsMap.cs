@@ -15,9 +15,6 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.Phone).Not.Nullable();
             Map(x => x.Email).Not.Nullable();
 
-            /*HasMany<Clients>(x => x.Client)
-                .Cascade.All()
-                .Not.LazyLoad();*/
             References(x => x.Client)
             .Column("ClientId")
             .Cascade.None()

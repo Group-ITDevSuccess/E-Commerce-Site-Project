@@ -7,7 +7,7 @@ using WebApplication.Entity;
 
 namespace WebApplication.Business
 {
-    public class AccountRepository : EntityRepository<Account>
+    public class AccountRepository : EntityRepository<Accounts>
     {
     }
 }
