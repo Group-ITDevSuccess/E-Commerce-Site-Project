@@ -54,6 +54,7 @@ namespace WebApplication.Controllers
             client.LastNameClient = clientInput.LastNameClient;
             client.BirthDayClient = clientInput.BirthDayClient;
             client.GenreClient = clientInput.GenreClient;
+
             client.AddressClient = new AddressClients
             {
                 City = clientInput.AddressClient.City,

@@ -153,6 +153,7 @@
     <Compile Include="Mapping\ClientsMap.cs" />
     <Compile Include="Mapping\ProductsMap.cs" />
     <Compile Include="Mapping\StocksMap.cs" />
+    <Compile Include="Mapping\UsersMap.cs" />
     <Compile Include="NHibernateHelper.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,7 +171,9 @@
     <Compile Include="Services\ContactsReq.cs" />
     <Compile Include="Services\ProductsReq.cs" />
     <Compile Include="Services\StocksReq.cs" />
+    <Compile Include="Services\UsersReq.cs" />
     <Compile Include="Stocks.cs" />
+    <Compile Include="Users.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

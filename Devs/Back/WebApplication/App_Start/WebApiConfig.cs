@@ -43,6 +43,7 @@ namespace WebApplication
             container.RegisterType<EntityRepository<Cards>, CardsRepository>();
             container.RegisterType<EntityRepository<CardTypes>, CardTypesRepository>();
             container.RegisterType<EntityRepository<Agence>, AgenceRepository>();
+            container.RegisterType<EntityRepository<Users>, UsersRepository>();
         }
     }
 }
