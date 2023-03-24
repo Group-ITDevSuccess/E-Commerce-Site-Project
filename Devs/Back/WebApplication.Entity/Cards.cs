@@ -15,6 +15,7 @@ namespace WebApplication.Entity
         public virtual string Number { get; set; }
         public virtual string PassWord { get; set; }
         public virtual DateTime DateCreation { get; set; }
+        [JsonIgnore]
         public virtual Agence Agence { get; set; }
         public virtual CardTypes CardType { get; set; }
 

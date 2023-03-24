@@ -14,5 +14,6 @@ namespace WebApplication.Entity.Services
         public bool GenreClient { get; set; }
         public AddressClients AddressClient {get; set;}
         public Accounts AccountClient { get; set;}
+        public Cards Card { get; set;}
     }
 }

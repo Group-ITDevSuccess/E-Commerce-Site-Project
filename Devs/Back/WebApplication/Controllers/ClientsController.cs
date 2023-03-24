@@ -14,10 +14,15 @@ namespace WebApplication.Controllers
     public class ClientsController : ApiController
     {
         private EntityRepository<Clients> _clientRepository = null;
+        private EntityRepository<Cards> _cardsRepository = null;
 
-        public ClientsController(EntityRepository<Clients> clientRepository)
+        public ClientsController(
+            EntityRepository<Clients> clientRepository,
+            EntityRepository<Cards> cardsRepository
+            )
         {
             _clientRepository = clientRepository;
+            _cardsRepository = cardsRepository;
         }
 
         [HttpGet]
@@ -112,5 +117,33 @@ namespace WebApplication.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, "Client Effacer !");
 
         }
+
+        [HttpGet]
+        [Route("api/clients/cards")]
+        public async Task<HttpResponseMessage> AssignCardClient([FromUri] Guid idCards, [FromUri] Guid idClient)
+        {
+            var clientSpecific = await _clientRepository.GetById(idClient);
+            var cardSpecific = await _cardsRepository.GetById(idCards);
+
+            if (clientSpecific == null || cardSpecific == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, $"On a client = {clientSpecific.FirstNameClient} et card = {cardSpecific.Number}");
+
+            clientSpecific.Card = new List<Cards>();
+
+            var card = new Cards
+            {
+                Number = cardSpecific.Number,
+                PassWord = cardSpecific.PassWord,
+                DateCreation = cardSpecific.DateCreation,
+                CardType = cardSpecific.CardType,
+                Agence = cardSpecific.Agence,
+            };
+
+            clientSpecific.Card.Add(card);
+
+            _clientRepository.SaveOrUpdate(clientSpecific);
+            return Request.CreateErrorResponse(HttpStatusCode.OK, "Cartes attribuer a au client !");
+        }
+
+
     }
 }

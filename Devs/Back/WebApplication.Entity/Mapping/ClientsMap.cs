@@ -27,6 +27,11 @@ namespace WebApplication.Entity.Mapping
                 .Cascade.All()
                 .Not.LazyLoad();
 
+            References(x => x.Card)
+                .Column("CardId")
+                .Cascade.SaveUpdate()
+                .Not.LazyLoad();
+
             HasMany(x => x.Contact)
                 /*.Inverse()*/
                 .Cascade.All()

@@ -17,16 +17,19 @@ namespace WebApplication.Controllers
         private EntityRepository<Cards> _cardsRepository = null;
         private EntityRepository<Agence> _agenceRepository = null;
         private EntityRepository<CardTypes> _cardTypesRepository = null;
+        private EntityRepository<Clients> _clientRepository = null;
 
         public CardsController(
             EntityRepository<Cards> cardsRepository,
             EntityRepository<Agence> agenceRepository,
-            EntityRepository<CardTypes> cardTypesRepository
+            EntityRepository<CardTypes> cardTypesRepository,
+            EntityRepository<Clients> clientRepository
             )
         {
             _cardsRepository = cardsRepository;
             _agenceRepository = agenceRepository;
             _cardTypesRepository = cardTypesRepository;
+            _clientRepository = clientRepository;
         }
 
         [HttpGet]
@@ -92,6 +95,8 @@ namespace WebApplication.Controllers
             await _cardsRepository.Delete(specificalCard);
             return Request.CreateResponse(HttpStatusCode.OK, $"Carte de Numéro {specificalCard.Number} est supprimer !");
         }
+
+        
 
     }
 }

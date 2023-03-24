@@ -15,5 +15,6 @@ namespace WebApplication.Entity
         public virtual IList<Contacts> Contact { get; set; }
         public virtual AddressClients AddressClient { get; set; }
         public virtual Accounts Account { get; set; }
+        public virtual List<Cards> Card { get; set; }
     }
 }
