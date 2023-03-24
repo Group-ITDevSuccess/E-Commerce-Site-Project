@@ -141,6 +141,7 @@
     <Compile Include="Categories.cs" />
     <Compile Include="Contacts.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="InfoUsers.cs" />
     <Compile Include="Mapping\AccountMap.cs" />
     <Compile Include="Mapping\AddressClientsMap.cs" />
     <Compile Include="Mapping\AgenceMap.cs" />
@@ -151,6 +152,7 @@
     <Compile Include="Mapping\ContactsMap.cs" />
     <Compile Include="Mapping\EntityMap.cs" />
     <Compile Include="Mapping\ClientsMap.cs" />
+    <Compile Include="Mapping\InfoUsersMap.cs" />
     <Compile Include="Mapping\ProductsMap.cs" />
     <Compile Include="Mapping\StocksMap.cs" />
     <Compile Include="Mapping\UsersMap.cs" />
@@ -169,6 +171,7 @@
     <Compile Include="Services\ClientsReq.cs" />
     <Compile Include="Clients.cs" />
     <Compile Include="Services\ContactsReq.cs" />
+    <Compile Include="Services\InfoUsersReq.cs" />
     <Compile Include="Services\ProductsReq.cs" />
     <Compile Include="Services\StocksReq.cs" />
     <Compile Include="Services\UsersReq.cs" />

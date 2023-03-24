@@ -46,13 +46,8 @@ namespace WebApplication.Controllers
                 Product = productSpecific
             };
 
-            productSpecific.Stock = new List<Stocks> { stock };
-
-            /*stock.Product = new List<Products> { productSpecific };*/
-
+            productSpecific.Stock = new List<Stocks> ();
             productSpecific.Stock.Add(stock);
-
-            /*_stocksRepository.SaveOrUpdate(stock);*/
             _productsRepository.SaveOrUpdate(productSpecific);
 
 

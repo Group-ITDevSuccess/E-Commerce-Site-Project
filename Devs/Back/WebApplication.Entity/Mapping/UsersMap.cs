@@ -17,6 +17,11 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.Pseudo).Not.Nullable();
             Map(x => x.Email).Not.Nullable();
             Map(x => x.PassWord).Not.Nullable();
+
+            HasMany(x => x.Info)
+                .Inverse()
+                .Cascade.All()
+                .Not.LazyLoad();
         }
     }
 }

@@ -13,5 +13,6 @@ namespace WebApplication.Entity.Services
         public string Pseudo { get; set; }
         public string Email { get; set; }
         public string PassWord { get; set; }
+        public List<InfoUsers> Info { get; set; }
     }
 }
