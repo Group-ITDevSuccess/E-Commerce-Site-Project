@@ -1,0 +1,60 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Liste des commandes</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nom</th>
+            <th>Date de commande</th>
+            <th>Statut</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>01/04/2023</td>
+            <td><span class="badge bg-success">Livré</span></td>
+            <td><a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Voir</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jane Doe</td>
+            <td>02/04/2023</td>
+            <td><span class="badge bg-warning">En cours</span></td>
+            <td><a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Voir</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Bob Smith</td>
+            <td>03/04/2023</td>
+            <td><span class="badge bg-danger">Annulé</span></td>
+            <td><a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> Voir</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <h2>Filtres</h2>
+      <form>
+        <div class="mb-3">
+          <label for="inputName" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
+        <div class="mb-3">
+          <label for="inputStatus" class="form-label">Statut</label>
+          <select id="inputStatus" class="form-select">
+            <option selected>Tous</option>
+            <option>Livré</option>
+            <option>En cours</option>
+            <option>Annulé</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-filter"></i> Filtrer</button>
+      </form>
+    </div>
+  </div>
+</div>

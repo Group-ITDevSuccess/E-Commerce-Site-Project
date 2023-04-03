@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './themes/layout/admin/header/header.component';
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app.routing';
   ],
   imports: [
     AppRoutingModule,
+    HttpClientModule,
     BrowserModule,
     PagesModule,
     SharedModule

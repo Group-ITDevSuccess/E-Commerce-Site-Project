@@ -1,0 +1,71 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Nombre de commandes</h5>
+          <p class="card-text">50</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Total des ventes</h5>
+          <p class="card-text">$10,000</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Clients</h5>
+          <p class="card-text">30</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h2>Dernières commandes</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Client</th>
+            <th>Date de la commande</th>
+            <th>Total</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>2023-03-28</td>
+            <td>$100</td>
+            <td><span class="badge bg-success">Terminé</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jane Doe</td>
+            <td>2023-03-29</td>
+            <td>$200</td>
+            <td><span class="badge bg-warning text-dark">En attente</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Bob Smith</td>
+            <td>2023-03-30</td>
+            <td>$150</td>
+            <td><span class="badge bg-danger">Annulé</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <h2>Statistiques</h2>
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+</div>

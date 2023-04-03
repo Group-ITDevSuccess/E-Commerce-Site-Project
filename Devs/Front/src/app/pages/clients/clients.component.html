@@ -1,0 +1,67 @@
+<div class="container mt-2 mb-3">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Liste des clients</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Numéro de téléphone</th>
+            <th>Adresse</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>johndoe@gmail.com</td>
+            <td>1234567890</td>
+            <td>123 Main St, Anytown USA</td>
+            <td><a href="#" class="btn btn-primary"><i class="fas fa-edit"></i> Modifier</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jane Doe</td>
+            <td>janedoe@gmail.com</td>
+            <td>1234567890</td>
+            <td>123 Main St, Anytown USA</td>
+            <td><a href="#" class="btn btn-primary"><i class="fas fa-edit"></i> Modifier</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Bob Smith</td>
+            <td>bobsmith@gmail.com</td>
+            <td>1234567890</td>
+            <td>123 Main St, Anytown USA</td>
+            <td><a href="#" class="btn btn-primary"><i class="fas fa-edit"></i> Modifier</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <h2>Ajouter un client</h2>
+      <form>
+        <div class="mb-3">
+          <label for="inputName" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail">
+        </div>
+        <div class="mb-3">
+          <label for="inputPhone" class="form-label">Numéro de téléphone</label>
+          <input type="tel" class="form-control" id="inputPhone">
+        </div>
+        <div class="mb-3">
+          <label for="inputAddress" class="form-label">Adresse</label>
+          <textarea class="form-control" id="inputAddress"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Ajouter</button>
+      </form>
+    </div>
+  </div>
+</div>
