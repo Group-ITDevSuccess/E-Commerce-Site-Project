@@ -7,11 +7,12 @@ import { OrdersComponent } from './orders/orders.component';
 import { ClientsComponent } from './clients/clients.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   imports: [],
   exports: [],
-  declarations: [HomeComponent, ProductsComponent, UsersComponent, CustomersComponent, OrdersComponent, ClientsComponent, DashboardComponent, LoginComponent],
+  declarations: [HomeComponent, ProductsComponent, UsersComponent, CustomersComponent, OrdersComponent, ClientsComponent, DashboardComponent, LoginComponent, SignupComponent],
   providers: []
 })
 
