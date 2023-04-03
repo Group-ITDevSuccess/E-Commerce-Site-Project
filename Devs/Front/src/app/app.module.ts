@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './themes/layout/admin/header/header.component';
 import { FooterComponent } from './themes/layout/admin/footer/footer.component';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { FooterComponent } from './themes/layout/admin/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
