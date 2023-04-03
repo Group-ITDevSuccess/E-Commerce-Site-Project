@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './themes/layout/admin/header/header.component';
 import { FooterComponent } from './themes/layout/admin/footer/footer.component';
 import { PagesModule } from './pages/pages.module';
+import { SharedModule } from './themes/shared/shared.module';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,10 @@ import { PagesModule } from './pages/pages.module';
     FooterComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    PagesModule
+    PagesModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
