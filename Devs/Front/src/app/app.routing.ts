@@ -8,6 +8,8 @@ import { UsersComponent } from "./pages/users/users.component";
 import { CustomersComponent } from './pages/customers/customers.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
+import { LoginComponent } from './pages/login/login.component';
+
 
 const routes : Routes = [
   {
@@ -39,6 +41,10 @@ const routes : Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   }
 ]
 

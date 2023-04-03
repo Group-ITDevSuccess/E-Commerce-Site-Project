@@ -6,11 +6,12 @@ import { CustomersComponent } from './customers/customers.component';
 import { OrdersComponent } from './orders/orders.component';
 import { ClientsComponent } from './clients/clients.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [],
   exports: [],
-  declarations: [HomeComponent, ProductsComponent, UsersComponent, CustomersComponent, OrdersComponent, ClientsComponent, DashboardComponent],
+  declarations: [HomeComponent, ProductsComponent, UsersComponent, CustomersComponent, OrdersComponent, ClientsComponent, DashboardComponent, LoginComponent],
   providers: []
 })
 
