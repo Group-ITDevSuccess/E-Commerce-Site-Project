@@ -8,6 +8,9 @@ import { FooterComponent } from './themes/layout/admin/footer/footer.component';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './themes/shared/shared.module';
 import { AppRoutingModule } from './app.routing';
+import { AppUserService } from './@core/services/admin/app-user.service';
+import { ApiAppUser } from './services/admin/api-app-user';
+import { ApiService } from './@core/services/api.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,7 @@ import { AppRoutingModule } from './app.routing';
     PagesModule,
     SharedModule
   ],
-  providers: [],
+  providers: [{provide: AppUserService, useClass:  ApiAppUser}, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -19,7 +19,7 @@ namespace WebApplication.Controllers
             _usersRepository = usersRepository;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("api/users")]
         public async Task<HttpResponseMessage> GetAllUserss()
         {

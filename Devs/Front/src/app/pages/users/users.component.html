@@ -1,9 +1,10 @@
 <div class="container mt-5">
-  <h1 class="text-center mb-4">Tableau stylé avec Bootstrap 5 et FontAwesome</h1>
+  <h1 class="text-center mb-4">List des Utilisateurs</h1>
   <div class="table-responsive">
     <table class="table table-striped table-hover">
       <thead>
         <tr>
+          <th scope="col">Id</th>
           <th scope="col">Nom</th>
           <th scope="col">Prénom</th>
           <th scope="col">Contact</th>
@@ -11,25 +12,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Smith</td>
-          <td>John</td>
-          <td><a href="tel:+1234567890"><i class="fas fa-phone me-2"></i>(123) 456-7890</a></td>
-          <td>1234 Main St, Anytown, USA</td>
-        </tr>
-        <tr>
-          <td>Doe</td>
-          <td>Jane</td>
-          <td><a href="tel:+0987654321"><i class="fas fa-phone me-2"></i>(098) 765-4321</a></td>
-          <td>5678 Second St, Othertown, USA</td>
-        </tr>
-        <tr>
-          <td>Johnson</td>
-          <td>Robert</td>
-          <td><a href="tel:+5555555555"><i class="fas fa-phone me-2"></i>(555) 555-5555</a></td>
-          <td>910 Third St, Yetanothertown, USA</td>
+        <tr *ngFor="let user of appUsers; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{user.FirstName}}</td>
+          <td>{{user.LastName}}</td>
+          <td><a href="tel:+1234567890"><i class="fas fa-phone me-2"></i>{{user.Email}}</a></td>
+          <td>{{user.Pseudo}}</td>
         </tr>
       </tbody>
+
     </table>
   </div>
 </div>
