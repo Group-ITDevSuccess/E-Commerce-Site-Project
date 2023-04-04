@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,6 @@ namespace WebApplication.Entity
         public virtual IList<Contacts> Contact { get; set; }
         public virtual AddressClients AddressClient { get; set; }
         public virtual Accounts Account { get; set; }
-        public virtual List<Cards> Card { get; set; }
+        public virtual Cards Card { get; set; }
     }
 }

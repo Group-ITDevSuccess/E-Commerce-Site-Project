@@ -96,7 +96,23 @@ namespace WebApplication.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, $"Carte de Numéro {specificalCard.Number} est supprimer !");
         }
 
-        
+        [HttpGet]
+        [Route("api/cards/client")]
+        public async Task<HttpResponseMessage> AssignCardClient([FromUri] Guid idCards, [FromUri] Guid idClient)
+        {
+            var clientSpecific = await _clientRepository.GetById(idClient);
+            var cardSpecific = await _cardsRepository.GetById(idCards);
+
+            if (clientSpecific == null || cardSpecific == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, $"On a client = {clientSpecific.FirstNameClient} et card = {cardSpecific.Number}");
+
+            clientSpecific.Card = cardSpecific;
+            
+            var test = clientSpecific;
+            Console.WriteLine(test);
+
+            _clientRepository.SaveOrUpdate(clientSpecific);
+            return Request.CreateErrorResponse(HttpStatusCode.OK, "Cartes attribuer a au client !");
+        }
 
     }
 }

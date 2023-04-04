@@ -12,6 +12,7 @@ namespace WebApplication.Entity.Services
         public string PassWord { get; set; }
         public DateTime DateCreation { get; set; }
         public virtual CardTypes CardType { get; set; }
+        public virtual Agence Agence { get; set; }
 
         public bool IsPasswordCorrect(CardsReq request)
         {

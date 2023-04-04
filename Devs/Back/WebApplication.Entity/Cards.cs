@@ -8,22 +8,18 @@ namespace WebApplication.Entity
     {
         public Cards()
         {
-            Number = GenerateCardNumber();
+            Number = GenerateCardNumber();  
             DateCreation = DateTime.Now;
         }
-
         public virtual string Number { get; set; }
         public virtual string PassWord { get; set; }
         public virtual DateTime DateCreation { get; set; }
-        [JsonIgnore]
         public virtual Agence Agence { get; set; }
         public virtual CardTypes CardType { get; set; }
-
         private static string GenerateCardNumber()
         {
-            // Génère un numéro de carte bancaire unique
             Random random = new Random();
-            string prefix = "55"; // Le préfixe "55" est réservé aux cartes bancaires
+            string prefix = "55";
             string suffix = "";
             for (int i = 0; i < 14; i++)
             {
