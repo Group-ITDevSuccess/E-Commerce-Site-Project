@@ -29,7 +29,7 @@ namespace WebApplication.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, listOfAllUserss);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("api/users")]
         public async Task<HttpResponseMessage> GetUsersById([FromUri] Guid IdInput)
         {
@@ -82,7 +82,7 @@ namespace WebApplication.Controllers
             }
         }
 
-        [HttpPatch]
+        [HttpPost]
         [Route("api/users/update")]
         public async Task<HttpResponseMessage> UpdateUsers([FromUri] Guid idInput, [FromBody] UsersReq usersInput)
         {
@@ -100,7 +100,7 @@ namespace WebApplication.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, "Users Mise a Jour !");
         }
 
-        [HttpDelete]
+        [HttpGet]
         [Route("api/users/delete")]
         public async Task<HttpResponseMessage> DeleteUsers([FromUri] Guid idInput)
         {
