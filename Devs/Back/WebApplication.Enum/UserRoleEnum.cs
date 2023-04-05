@@ -9,7 +9,7 @@ namespace WebApplication.Enum
     public enum UserRoleEnum
     {
         ADMIN,
-        USER,
-        CLIENT
+        CLIENT,
+        USER
     }
 }

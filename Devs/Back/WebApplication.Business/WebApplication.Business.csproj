@@ -151,20 +151,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountRepository.cs" />
     <Compile Include="AddressClientRepository.cs" />
     <Compile Include="AgenceRepository.cs" />
+    <Compile Include="AuthRepository.cs" />
     <Compile Include="BankAccountRepository.cs" />
     <Compile Include="BrandsRepository.cs" />
     <Compile Include="CardsRepository.cs" />
     <Compile Include="CardTypesRepository.cs" />
     <Compile Include="CategoriesRepository.cs" />
-    <Compile Include="ClientsRepository.cs" />
     <Compile Include="ContactsRepository.cs" />
     <Compile Include="EntityRepository.cs" />
-    <Compile Include="InfoUsersRepository.cs" />
     <Compile Include="ProductsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleRepository.cs" />
     <Compile Include="StocksRepository.cs" />
     <Compile Include="UsersRepository.cs" />
   </ItemGroup>
@@ -176,6 +175,10 @@
     <ProjectReference Include="..\WebApplication.Entity\WebApplication.Entity.csproj">
       <Project>{CD1E5F13-4A4E-4C13-A6BC-F08C8A69991D}</Project>
       <Name>WebApplication.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApplication.Interface\WebApplication.Interface.csproj">
+      <Project>{F51E3677-F411-453D-A15D-3525D3379FB9}</Project>
+      <Name>WebApplication.Interface</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

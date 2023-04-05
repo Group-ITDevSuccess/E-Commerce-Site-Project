@@ -58,3 +58,13 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\obj\Debug\WebApplication.Entity.pdb
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.Runtime.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Security.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Security.Jwt.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Thinktecture.IdentityModel.Core.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Security.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Security.Jwt.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Entity\bin\Debug\Thinktecture.IdentityModel.Core.pdb

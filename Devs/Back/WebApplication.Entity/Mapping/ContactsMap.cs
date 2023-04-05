@@ -15,8 +15,8 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.Phone).Not.Nullable();
             Map(x => x.DateCreation).Not.Nullable();
 
-            References(x => x.Client)
-            .Column("ClientId")
+            References(x => x.User)
+            .Column("UserId")
             .Cascade.None()
             .Not.LazyLoad();
         }

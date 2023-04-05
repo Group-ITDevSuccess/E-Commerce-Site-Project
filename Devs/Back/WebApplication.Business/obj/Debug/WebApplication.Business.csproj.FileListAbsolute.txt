@@ -61,3 +61,16 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\obj\Debug\WebApplication.Business.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\obj\Debug\WebApplication.Business.pdb
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\System.Runtime.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\Microsoft.Owin.Security.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\Microsoft.Owin.Security.Jwt.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\Thinktecture.IdentityModel.Core.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\WebApplication.Interface.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\WebApplication.Interface.pdb
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\WebApplication.Interface.dll.config
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\Microsoft.Owin.Security.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\Microsoft.Owin.Security.Jwt.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication.Business\bin\Debug\Thinktecture.IdentityModel.Core.pdb

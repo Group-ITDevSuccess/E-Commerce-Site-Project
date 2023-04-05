@@ -16,6 +16,6 @@ namespace WebApplication.Entity
         public virtual string Phone { get; set; }
         public virtual DateTime DateCreation { get; set; }
         [JsonIgnore]
-        public virtual Clients Client { get; set; }
+        public virtual Users User { get; set; }
     }
 }

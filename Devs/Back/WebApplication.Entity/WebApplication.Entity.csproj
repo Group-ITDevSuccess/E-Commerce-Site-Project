@@ -147,7 +147,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Accounts.cs" />
     <Compile Include="AddressClients.cs" />
     <Compile Include="Agence.cs" />
     <Compile Include="BankAccount.cs" />
@@ -157,8 +156,6 @@
     <Compile Include="Categories.cs" />
     <Compile Include="Contacts.cs" />
     <Compile Include="Entity.cs" />
-    <Compile Include="InfoUsers.cs" />
-    <Compile Include="Mapping\AccountMap.cs" />
     <Compile Include="Mapping\AddressClientsMap.cs" />
     <Compile Include="Mapping\AgenceMap.cs" />
     <Compile Include="Mapping\BankAccountMap.cs" />
@@ -167,15 +164,14 @@
     <Compile Include="Mapping\CategoriesMap.cs" />
     <Compile Include="Mapping\ContactsMap.cs" />
     <Compile Include="Mapping\EntityMap.cs" />
-    <Compile Include="Mapping\ClientsMap.cs" />
-    <Compile Include="Mapping\InfoUsersMap.cs" />
     <Compile Include="Mapping\ProductsMap.cs" />
+    <Compile Include="Mapping\RoleMap.cs" />
     <Compile Include="Mapping\StocksMap.cs" />
     <Compile Include="Mapping\UsersMap.cs" />
     <Compile Include="NHibernateHelper.cs" />
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\AccountReq.cs" />
+    <Compile Include="Role.cs" />
     <Compile Include="Services\AddressClientsReq.cs" />
     <Compile Include="Services\AgenceReq.cs" />
     <Compile Include="Services\BankAccountReq.cs" />
@@ -184,10 +180,7 @@
     <Compile Include="Mapping\CardTypesMap.cs" />
     <Compile Include="Services\CardTypesReq.cs" />
     <Compile Include="Services\CategoriesReq.cs" />
-    <Compile Include="Services\ClientsReq.cs" />
-    <Compile Include="Clients.cs" />
     <Compile Include="Services\ContactsReq.cs" />
-    <Compile Include="Services\InfoUsersReq.cs" />
     <Compile Include="Services\ProductsReq.cs" />
     <Compile Include="Services\StocksReq.cs" />
     <Compile Include="Services\UsersReq.cs" />

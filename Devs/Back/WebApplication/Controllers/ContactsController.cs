@@ -14,11 +14,11 @@ namespace WebApplication.Controllers
     public class ContactsController : ApiController
     {
         private EntityRepository<Contacts> _contactsRepository = null;
-        private EntityRepository<Clients> _clientsRepository = null;
+        private EntityRepository<Users> _clientsRepository = null;
 
         public ContactsController(
             EntityRepository<Contacts> contactsRepository,
-            EntityRepository<Clients> clientsRepository
+            EntityRepository<Users> clientsRepository
             )
         {
             _contactsRepository = contactsRepository;
@@ -35,12 +35,12 @@ namespace WebApplication.Controllers
 
         [HttpPost]
         [Route("api/contacts/assign")]
-        public async Task<HttpResponseMessage> AssignContact([FromUri] Guid idClient, [FromBody] ContactsReq contactsInput)
+        public async Task<HttpResponseMessage> AssignContact([FromUri] Guid idUser, [FromBody] ContactsReq contactsInput)
         {
-            Console.WriteLine(idClient);
-            var findClient = await _clientsRepository.GetById(idClient);
+            Console.WriteLine(idUser);
+            var findUser = await _clientsRepository.GetById(idUser);
 
-            if (findClient == null)
+            if (findUser == null)
                 return Request.CreateResponse(HttpStatusCode.NotFound,
                     "Utilisateur Introuvable, impossible d'assigner de numéro");
 
@@ -49,14 +49,14 @@ namespace WebApplication.Controllers
             {
                 Phone = contactsInput.Phone,
                 DateCreation = contactsInput.DateCreation,
-                Client = findClient
+                User = findUser
             };
 
-            findClient.Contact.Add(constact);
+            findUser.Contact.Add(constact);
 
-            _clientsRepository.SaveOrUpdate(findClient);
+            _clientsRepository.SaveOrUpdate(findUser);
 
-            return Request.CreateResponse(HttpStatusCode.OK, $"Contact Assigner à {findClient.FirstNameClient}");
+            return Request.CreateResponse(HttpStatusCode.OK, $"Contact Assigner à {findUser.FirstName}");
         }
     }
 }

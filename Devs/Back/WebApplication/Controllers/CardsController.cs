@@ -17,19 +17,19 @@ namespace WebApplication.Controllers
         private EntityRepository<Cards> _cardsRepository = null;
         private EntityRepository<Agence> _agenceRepository = null;
         private EntityRepository<CardTypes> _cardTypesRepository = null;
-        private EntityRepository<Clients> _clientRepository = null;
+        private EntityRepository<Users> _userRepository = null;
 
         public CardsController(
             EntityRepository<Cards> cardsRepository,
             EntityRepository<Agence> agenceRepository,
             EntityRepository<CardTypes> cardTypesRepository,
-            EntityRepository<Clients> clientRepository
+            EntityRepository<Users> userRepository
             )
         {
             _cardsRepository = cardsRepository;
             _agenceRepository = agenceRepository;
             _cardTypesRepository = cardTypesRepository;
-            _clientRepository = clientRepository;
+            _userRepository = userRepository;
         }
 
         [HttpGet]
@@ -97,21 +97,21 @@ namespace WebApplication.Controllers
         }
 
         [HttpGet]
-        [Route("api/cards/client")]
+        [Route("api/cards/user")]
         public async Task<HttpResponseMessage> AssignCardClient([FromUri] Guid idCards, [FromUri] Guid idClient)
         {
-            var clientSpecific = await _clientRepository.GetById(idClient);
+            var userSpecific = await _userRepository.GetById(idClient);
             var cardSpecific = await _cardsRepository.GetById(idCards);
 
-            if (clientSpecific == null || cardSpecific == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, $"On a client = {clientSpecific.FirstNameClient} et card = {cardSpecific.Number}");
+            if (userSpecific == null || cardSpecific == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, $"On a user = {userSpecific.FirstName} et card = {cardSpecific.Number}");
 
-            clientSpecific.Card = cardSpecific;
+            userSpecific.Card = cardSpecific;
             
-            var test = clientSpecific;
+            var test = userSpecific;
             Console.WriteLine(test);
 
-            _clientRepository.SaveOrUpdate(clientSpecific);
-            return Request.CreateErrorResponse(HttpStatusCode.OK, "Cartes attribuer a au client !");
+            _userRepository.SaveOrUpdate(userSpecific);
+            return Request.CreateErrorResponse(HttpStatusCode.OK, "Cartes attribuer a au user !");
         }
 
     }
