@@ -33,10 +33,8 @@ namespace WebApplication
 
         private static void SetDependencies(UnityContainer container)
         {
-            container.RegisterType<EntityRepository<Clients>, ClientsRepository>();
             container.RegisterType<EntityRepository<Contacts>, ContactsRepository>();
             container.RegisterType<EntityRepository<Brand>, BrandsRepository>();
-            container.RegisterType<EntityRepository<Accounts>, AccountRepository>();
             container.RegisterType<EntityRepository<Categories>, CategoriesRepository>();
             container.RegisterType<EntityRepository<Stocks>, StocksRepository>();
             container.RegisterType<EntityRepository<BankAccount>, BankAccountRepository>();
@@ -44,7 +42,6 @@ namespace WebApplication
             container.RegisterType<EntityRepository<CardTypes>, CardTypesRepository>();
             container.RegisterType<EntityRepository<Agence>, AgenceRepository>();
             container.RegisterType<EntityRepository<Users>, UsersRepository>();
-            container.RegisterType<EntityRepository<InfoUsers>, InfoUsersRepository>();
         }
     }
 }

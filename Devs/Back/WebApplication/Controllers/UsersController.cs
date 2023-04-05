@@ -50,7 +50,6 @@ namespace WebApplication.Controllers
 
             users.FirstName = usersInput.FirstName;
             users.LastName = usersInput.LastName;
-            users.Pseudo = usersInput.Pseudo;
             users.Email = usersInput.Email;
             users.PassWord = usersInput.PassWord;
 
@@ -62,13 +61,6 @@ namespace WebApplication.Controllers
                 Street = usersInput.Address.Street,
                 Batch = usersInput.Address.Batch,
                 Postal_Code = usersInput.Address.Postal_Code,
-            };
-
-            users.Account = new Accounts
-            {
-                Pseudo = usersInput.Account.Pseudo,
-                Email = usersInput.Account.Email,
-                PassWord = usersInput.Account.PassWord,
             };
 
             try
@@ -92,7 +84,6 @@ namespace WebApplication.Controllers
 
             findUsersId.FirstName = usersInput.FirstName;
             findUsersId.LastName = usersInput.LastName;
-            findUsersId.Pseudo = usersInput.Pseudo;
             findUsersId.Email = usersInput.Email;
             findUsersId.PassWord = usersInput.PassWord;
 
