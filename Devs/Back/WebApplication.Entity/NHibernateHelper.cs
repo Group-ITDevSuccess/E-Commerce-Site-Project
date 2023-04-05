@@ -28,7 +28,7 @@ namespace WebApplication.Entity
      "Server=localhost; Port=3306; Database=e_commerce_site_project; Uid=root; Pwd=AllahSeul;default command timeout=20000"));
                     _sessionFactory = Fluently.Configure()
                         .Database(cfg).Mappings(
-                        m => m.FluentMappings.AddFromAssemblyOf<Clients>()
+                        m => m.FluentMappings.AddFromAssemblyOf<Users>()
                 )
                         .ExposeConfiguration(_buildSchema)
                         .ExposeConfiguration(x =>
