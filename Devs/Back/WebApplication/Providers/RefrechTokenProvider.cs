@@ -24,12 +24,13 @@ namespace WebApplication.Providers
             throw new NotImplementedException();
         }
 
-        public async Task CreateAsync(AuthenticationTokenCreateContext context)
+        public Task CreateAsync(AuthenticationTokenCreateContext context)
         {
             DateTime now = DateTime.UtcNow;
             context.Ticket.Properties.IssuedUtc = now;
-            context.Ticket.Properties.ExpiresUtc = now.AddMinutes(Int32.Parse(ConfigurationManager.AppSettings["REFRESH_TOKEN_EXP_MINUTE"]));
+            context.Ticket.Properties.ExpiresUtc = now.AddMinutes(int.Parse(ConfigurationManager.AppSettings["REFRESH_TOKEN_EXP_MINUTE"]));
             context.SetToken(context.SerializeTicket());
+            return Task.CompletedTask;
         }
 
         public void Receive(AuthenticationTokenReceiveContext context)
@@ -37,7 +38,7 @@ namespace WebApplication.Providers
             throw new NotImplementedException();
         }
 
-        public async Task ReceiveAsync(AuthenticationTokenReceiveContext context)
+        public Task ReceiveAsync(AuthenticationTokenReceiveContext context)
         {
             if (!context.OwinContext.Response.Headers.ContainsKey("Access-Control-Allow-Origin"))
             {
@@ -45,6 +46,7 @@ namespace WebApplication.Providers
             }
 
             context.DeserializeTicket(context.Token);
+            return Task.CompletedTask;
         }
 
         public string GetHash(string input)

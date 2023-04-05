@@ -35,7 +35,7 @@ namespace WebApplication.Business
                             session.SaveOrUpdate(u);
                             transaction.Commit();
                         }
-                        catch (Exception e)
+                        catch (Exception)
                         {
                             transaction.Rollback();
                         }
@@ -60,7 +60,7 @@ namespace WebApplication.Business
                             session.SaveOrUpdate(u);
                             transaction.Commit();
                         }
-                        catch (Exception e)
+                        catch (Exception)
                         {
                             transaction.Rollback();
                         }
