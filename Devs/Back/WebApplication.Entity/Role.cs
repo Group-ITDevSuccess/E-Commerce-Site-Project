@@ -11,7 +11,6 @@ namespace WebApplication.Entity
     public class Role : Entity
     {
         public virtual UserRoleEnum Nom { get; set; }
-        public virtual string Description { get; set; }
         [JsonIgnore]
         public virtual IList<Users> User { get; set; }
     }

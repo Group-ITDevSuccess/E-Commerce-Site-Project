@@ -10,20 +10,20 @@ using WebApplication.Entity;
 
 namespace WebApplication.Controllers
 {
-    public class AddressClientsController : ApiController
+    public class AddressController : ApiController
     {
-        private EntityRepository<Address> _addressClientsRepository = null;
+        private EntityRepository<Address> _addressRepository = null;
 
-        public AddressClientsController(EntityRepository<Address> addressClientsRepository)
+        public AddressController(EntityRepository<Address> addressRepository)
         {
-            _addressClientsRepository = addressClientsRepository;
+            _addressRepository = addressRepository;
         }
 
         [HttpGet]
         [Route("api/address_client")]
         public async Task<HttpResponseMessage> GetAllAdressClients()
         {
-            var addresses = await _addressClientsRepository.GetAll();
+            var addresses = await _addressRepository.GetAll();
 
             return Request.CreateResponse(HttpStatusCode.OK, addresses);
         }
