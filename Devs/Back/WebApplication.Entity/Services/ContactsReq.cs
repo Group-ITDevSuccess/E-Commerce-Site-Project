@@ -9,10 +9,11 @@ namespace WebApplication.Entity.Services
 {
     public class ContactsReq
     {
+        
         [JsonProperty("phone")]
         public virtual string Phone { get; set; }
         [JsonProperty("datecreation")]
-        public virtual DateTime DateCreation { get; set; }
+        public virtual DateTime DateCreation { get; set; } = DateTime.Now;
         
     }
 }
