@@ -7,8 +7,13 @@
           <th scope="col">Id</th>
           <th scope="col">Nom</th>
           <th scope="col">Prénom</th>
-          <th scope="col">Contact</th>
+          <th scope="col">Genre</th>
+          <th scope="col">Date de Naissance</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
           <th scope="col">Adresse</th>
+          <th scope="col">Mot de Passe</th>
+          <th scope="col">Role</th>
         </tr>
       </thead>
       <tbody>
@@ -16,8 +21,13 @@
           <td>{{i+1}}</td>
           <td>{{user.FirstName}}</td>
           <td>{{user.LastName}}</td>
-          <td><a href="tel:+1234567890"><i class="fas fa-phone me-2"></i>{{user.Email}}</a></td>
-          <td>{{user.Pseudo}}</td>
+          <td>{{user.Genre}}</td>
+          <td>{{user.BirthDay}}</td>
+          <td>{{user.Email}}</td>
+          <td><a href="tel:+1234567890"><i class="fas fa-phone me-2"></i>***</a></td>
+          <td>***</td>
+          <td>***</td>
+          <td *ngFor="let role of user.Role">{{role.Nom}}</td>
         </tr>
       </tbody>
 
