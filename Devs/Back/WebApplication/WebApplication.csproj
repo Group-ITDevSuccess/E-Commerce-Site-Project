@@ -284,6 +284,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\JwtProvider.cs" />
+    <Compile Include="Providers\OAuthProvider.cs" />
     <Compile Include="Resolvers\UnityResolver.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -382,6 +383,10 @@
     <ProjectReference Include="..\WebApplication.Enum\WebApplication.Enum.csproj">
       <Project>{0EEB0F37-D69B-440C-8D9C-11DD4D46D9FB}</Project>
       <Name>WebApplication.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApplication.Interface\WebApplication.Interface.csproj">
+      <Project>{F51E3677-F411-453D-A15D-3525D3379FB9}</Project>
+      <Name>WebApplication.Interface</Name>
     </ProjectReference>
     <ProjectReference Include="..\WebApplication.Utils\WebApplication.Utils.csproj">
       <Project>{630FCA75-39CA-4150-91DC-CA1E5BD1062F}</Project>

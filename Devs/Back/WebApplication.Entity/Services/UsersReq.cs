@@ -14,5 +14,10 @@ namespace WebApplication.Entity.Services
         public string Email { get; set; }
         public string PassWord { get; set; }
         public List<InfoUsers> Info { get; set; }
+        public DateTime BirthDay { get; set; }
+        public bool Genre { get; set; }
+        public AddressClients Address { get; set; }
+        public Accounts Account { get; set; }
+        public Cards Card { get; set; }
     }
 }

@@ -14,7 +14,14 @@ namespace WebApplication.Entity
         public virtual string Pseudo { get; set; }
         public virtual string Email { get; set; }   
         public virtual string PassWord { get; set; }
+        public virtual IList<Role> Roles { get; set; }
         public virtual IList<InfoUsers> Info { get; set; }
+        public virtual DateTime BirthDay { get; set; }
+        public virtual bool Genre { get; set; }
+        public virtual IList<Contacts> Contact { get; set; }
+        public virtual AddressClients Address { get; set; }
+        public virtual Accounts Account { get; set; }
+        public virtual Cards Card { get; set; }
 
     }
 }

@@ -53,23 +53,23 @@ namespace WebApplication.Controllers
             users.Pseudo = usersInput.Pseudo;
             users.Email = usersInput.Email;
             users.PassWord = usersInput.PassWord;
-/*
-            users.Address = new AddressUserss
+
+            users.Address = new AddressClients
             {
-                City = usersInput.AddressUsers.City,
-                Country = usersInput.AddressUsers.Country,
-                Quarter = usersInput.AddressUsers.Quarter,
-                Street = usersInput.AddressUsers.Street,
-                Batch = usersInput.AddressUsers.Batch,
-                Postal_Code = usersInput.AddressUsers.Postal_Code,
+                City = usersInput.Address.City,
+                Country = usersInput.Address.Country,
+                Quarter = usersInput.Address.Quarter,
+                Street = usersInput.Address.Street,
+                Batch = usersInput.Address.Batch,
+                Postal_Code = usersInput.Address.Postal_Code,
             };
 
             users.Account = new Accounts
             {
-                Pseudo = usersInput.AccountUsers.Pseudo,
-                Email = usersInput.AccountUsers.Email,
-                PassWord = usersInput.AccountUsers.PassWord,
-            };*/
+                Pseudo = usersInput.Account.Pseudo,
+                Email = usersInput.Account.Email,
+                PassWord = usersInput.Account.PassWord,
+            };
 
             try
             {
