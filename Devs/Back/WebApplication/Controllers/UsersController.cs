@@ -53,14 +53,14 @@ namespace WebApplication.Controllers
             users.Email = usersInput.Email;
             users.PassWord = usersInput.PassWord;
 
-            users.Address = new AddressClients
+            users.Address = new Address
             {
                 City = usersInput.Address.City,
                 Country = usersInput.Address.Country,
                 Quarter = usersInput.Address.Quarter,
                 Street = usersInput.Address.Street,
                 Batch = usersInput.Address.Batch,
-                Postal_Code = usersInput.Address.Postal_Code,
+                PostalCode = usersInput.Address.PostalCode,
             };
 
             try

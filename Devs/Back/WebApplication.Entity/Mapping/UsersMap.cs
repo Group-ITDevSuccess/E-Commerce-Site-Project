@@ -19,9 +19,9 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.BirthDay).Not.Nullable();
             Map(x => x.Genre).Not.Nullable();
 
-            HasManyToMany(x => x.Roles)
-                .Not.LazyLoad()
-                .Table("UsersRoles");
+            HasManyToMany(x => x.Role)
+                .Table("UsersRoles")
+                .Not.LazyLoad();
 
 
             References(x => x.Address)

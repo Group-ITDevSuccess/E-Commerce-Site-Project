@@ -8,9 +8,9 @@ namespace WebApplication.Utils
 {
     public class FixtureHelpers
     {
-        public async Task AddFixtures()
+        public async Task AddFixturesCardType()
         {
-            using(ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
+            using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {
                 using (ITransaction transaction = session.BeginTransaction())
                 {
@@ -76,6 +76,39 @@ namespace WebApplication.Utils
                 }
             }
 
+        }
+
+        public async Task AddFixturesRole()
+        {
+            using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
+            {
+                using (ITransaction transaction = session.BeginTransaction())
+                {
+                    try
+                    {
+                        await session.SaveOrUpdateAsync(new Role()
+                        {
+                            Nom = UserRoleEnum.ADMIN,
+                        });
+                        await session.SaveOrUpdateAsync(new Role()
+                        {
+                            Nom = UserRoleEnum.CLIENT,
+                        });
+                        await session.SaveOrUpdateAsync(new Role()
+                        {
+                            Nom = UserRoleEnum.USER,
+                        });
+
+                        transaction.Commit();
+                    }
+                    catch (Exception e)
+                    {
+
+                        throw e;
+                    }
+                }
+
+            }
         }
     }
 }

@@ -13,11 +13,11 @@ namespace WebApplication.Entity.Mapping
         {
             Abstract();
             Map(x => x.Nom);
-            Map(x => x.Description);
             HasManyToMany(x => x.User)
-                .Cascade.All()
                 .Inverse()
-                .Table("UsersRoles");
+                .Cascade.All()
+                .Table("UsersRoles")
+                .Not.LazyLoad();
         }
     }
 }

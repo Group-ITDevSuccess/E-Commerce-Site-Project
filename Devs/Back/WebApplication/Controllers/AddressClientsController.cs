@@ -12,9 +12,9 @@ namespace WebApplication.Controllers
 {
     public class AddressClientsController : ApiController
     {
-        private EntityRepository<AddressClients> _addressClientsRepository = null;
+        private EntityRepository<Address> _addressClientsRepository = null;
 
-        public AddressClientsController(EntityRepository<AddressClients> addressClientsRepository)
+        public AddressClientsController(EntityRepository<Address> addressClientsRepository)
         {
             _addressClientsRepository = addressClientsRepository;
         }

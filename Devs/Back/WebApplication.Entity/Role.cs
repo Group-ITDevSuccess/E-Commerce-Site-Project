@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ namespace WebApplication.Entity
     {
         public virtual UserRoleEnum Nom { get; set; }
         public virtual string Description { get; set; }
+        [JsonIgnore]
         public virtual IList<Users> User { get; set; }
     }
 }

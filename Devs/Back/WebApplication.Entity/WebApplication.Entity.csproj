@@ -156,7 +156,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddressClients.cs" />
+    <Compile Include="Address.cs" />
     <Compile Include="Agence.cs" />
     <Compile Include="BankAccount.cs" />
     <Compile Include="Brand.cs" />
@@ -165,7 +165,7 @@
     <Compile Include="Categories.cs" />
     <Compile Include="Contacts.cs" />
     <Compile Include="Entity.cs" />
-    <Compile Include="Mapping\AddressClientsMap.cs" />
+    <Compile Include="Mapping\AddressMap.cs" />
     <Compile Include="Mapping\AgenceMap.cs" />
     <Compile Include="Mapping\BankAccountMap.cs" />
     <Compile Include="Mapping\BrandMap.cs" />
@@ -181,7 +181,7 @@
     <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Role.cs" />
-    <Compile Include="Services\AddressClientsReq.cs" />
+    <Compile Include="Services\AddressReq.cs" />
     <Compile Include="Services\AgenceReq.cs" />
     <Compile Include="Services\BankAccountReq.cs" />
     <Compile Include="Services\BrandReq.cs" />
@@ -191,6 +191,7 @@
     <Compile Include="Services\CategoriesReq.cs" />
     <Compile Include="Services\ContactsReq.cs" />
     <Compile Include="Services\ProductsReq.cs" />
+    <Compile Include="Services\RoleReq.cs" />
     <Compile Include="Services\StocksReq.cs" />
     <Compile Include="Services\UsersReq.cs" />
     <Compile Include="Stocks.cs" />

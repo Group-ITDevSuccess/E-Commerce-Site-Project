@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace WebApplication.Entity.Mapping
 {
-    class AddressClientsMap : SubclassMap<AddressClients>
+    class AddressMap : SubclassMap<Address>
     {
-        public AddressClientsMap()
+        public AddressMap()
         {
             Abstract();
             Map(x => x.City).Not.Nullable();
@@ -17,7 +17,7 @@ namespace WebApplication.Entity.Mapping
             Map(x => x.Quarter).Not.Nullable();
             Map(x => x.Street).Not.Nullable();
             Map(x => x.Batch).Not.Nullable();
-            Map(x => x.Postal_Code).Not.Nullable();
+            Map(x => x.PostalCode).Not.Nullable();
         }
     }
 }

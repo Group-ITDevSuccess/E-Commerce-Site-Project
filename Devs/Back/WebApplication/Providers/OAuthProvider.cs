@@ -65,7 +65,7 @@ namespace WebApplication.Providers
             }
             var oAuthIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
             oAuthIdentity.AddClaim(new Claim(ClaimTypes.Email, user.Email));
-            foreach (var role in user.Roles)
+            foreach (var role in user.Role)
             {
                 oAuthIdentity.AddClaim(new Claim(ClaimTypes.Role, role.Nom.ToString()));
             }

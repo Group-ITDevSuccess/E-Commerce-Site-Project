@@ -7,7 +7,7 @@ using WebApplication.Entity;
 
 namespace WebApplication.Business
 {
-    public class AddressClientRepository : EntityRepository<AddressClients>
+    public class AddressRepository : EntityRepository<Address>
     {
     }
 }

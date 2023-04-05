@@ -98,9 +98,9 @@ namespace WebApplication.Controllers
 
         [HttpGet]
         [Route("api/cards/user")]
-        public async Task<HttpResponseMessage> AssignCardClient([FromUri] Guid idCards, [FromUri] Guid idClient)
+        public async Task<HttpResponseMessage> AssignCardClient([FromUri] Guid idCards, [FromUri] Guid idUser)
         {
-            var userSpecific = await _userRepository.GetById(idClient);
+            var userSpecific = await _userRepository.GetById(idUser);
             var cardSpecific = await _cardsRepository.GetById(idCards);
 
             if (userSpecific == null || cardSpecific == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, $"On a user = {userSpecific.FirstName} et card = {cardSpecific.Number}");

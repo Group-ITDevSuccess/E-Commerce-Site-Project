@@ -14,15 +14,15 @@ namespace WebApplication.Controllers
     public class ContactsController : ApiController
     {
         private EntityRepository<Contacts> _contactsRepository = null;
-        private EntityRepository<Users> _clientsRepository = null;
+        private EntityRepository<Users> _usersRepository = null;
 
         public ContactsController(
             EntityRepository<Contacts> contactsRepository,
-            EntityRepository<Users> clientsRepository
+            EntityRepository<Users> usersRepository
             )
         {
             _contactsRepository = contactsRepository;
-            _clientsRepository = clientsRepository;
+            _usersRepository = usersRepository;
         }
 
         [HttpGet]
@@ -38,7 +38,7 @@ namespace WebApplication.Controllers
         public async Task<HttpResponseMessage> AssignContact([FromUri] Guid idUser, [FromBody] ContactsReq contactsInput)
         {
             Console.WriteLine(idUser);
-            var findUser = await _clientsRepository.GetById(idUser);
+            var findUser = await _usersRepository.GetById(idUser);
 
             if (findUser == null)
                 return Request.CreateResponse(HttpStatusCode.NotFound,
@@ -54,7 +54,7 @@ namespace WebApplication.Controllers
 
             findUser.Contact.Add(constact);
 
-            _clientsRepository.SaveOrUpdate(findUser);
+            _usersRepository.SaveOrUpdate(findUser);
 
             return Request.CreateResponse(HttpStatusCode.OK, $"Contact Assigner à {findUser.FirstName}");
         }

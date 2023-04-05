@@ -16,9 +16,9 @@ namespace WebApplication.Entity
         public virtual string Email { get; set; }   
         public virtual string PassWord { get; set; }
         public virtual bool HasToken { get; set; }
-        public virtual IList<Role> Roles { get; set; }
+        public virtual IList<Role> Role { get; set; }
         public virtual IList<Contacts> Contact { get; set; }
-        public virtual AddressClients Address { get; set; }
+        public virtual Address Address { get; set; }
         public virtual Cards Card { get; set; }
     }
 }

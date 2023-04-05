@@ -4,14 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebApplication.Enum;
 
 namespace WebApplication.Entity.Services
 {
-    public class CategoriesReq
+    public class RoleReq
     {
-        [JsonProperty("type")]
-        public string Type { get; set; }
-        [JsonProperty("description")]
-        public string Description { get; set; }
+        [JsonProperty("role")]
+        public List<UserRoleEnum> Role { get; set; }
     }
 }
