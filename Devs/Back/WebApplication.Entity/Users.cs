@@ -11,7 +11,7 @@ namespace WebApplication.Entity
     {
         public virtual string FirstName { get; set; }
         public virtual string LastName { get; set; }
-        public virtual string Pseudo { get; set; }
+        public virtual bool HasToken { get; set; }
         public virtual string Email { get; set; }   
         public virtual string PassWord { get; set; }
         public virtual IList<Role> Roles { get; set; }

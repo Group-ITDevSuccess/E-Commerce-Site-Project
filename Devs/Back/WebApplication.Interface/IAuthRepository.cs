@@ -9,7 +9,7 @@ namespace WebApplication.Interface
 {
     public interface IAuthRepository
     {
-        Users FindByUserEmai(string email);
+        Users FindByUserEmail(string email);
         void DisableGeneratedToken(string email);
         Users EnableGeneretedToken(string email);
         bool HasToken(string email);
