@@ -1,5 +1,3 @@
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\obj\Debug\WebApplication.csproj.AssemblyReference.cache
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.dll.config
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.pdb
@@ -64,6 +62,9 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Cors.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.Jwt.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.OAuth.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Web.Infrastructure.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\MySql.Data.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Newtonsoft.Json.dll
@@ -75,6 +76,7 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Renci.SshNet.Async.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Renci.SshNet.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Buffers.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.IdentityModel.Tokens.Jwt.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Memory.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Net.Http.Formatting.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Numerics.Vectors.dll
@@ -83,6 +85,7 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Cors.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Helpers.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Http.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Http.Owin.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Http.WebHost.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Mvc.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Optimization.dll
@@ -90,12 +93,14 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.WebPages.Deployment.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.WebPages.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.WebPages.Razor.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Thinktecture.IdentityModel.Core.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Ubiety.Dns.Core.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Unity.Abstractions.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Unity.Container.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Business.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Entity.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Enum.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Interface.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Utils.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebGrease.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\ZstdNet.dll
@@ -106,6 +111,8 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Entity.dll.config
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Enum.pdb
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Enum.dll.config
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Interface.pdb
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Interface.dll.config
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Utils.pdb
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Utils.dll.config
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Antlr3.Runtime.xml
@@ -119,6 +126,9 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Cors.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.Jwt.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.OAuth.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\MySql.Data.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Newtonsoft.Json.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\NHibernate.xml
@@ -128,9 +138,11 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Renci.SshNet.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Renci.SshNet.Async.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Buffers.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.IdentityModel.Tokens.Jwt.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Memory.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Numerics.Vectors.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Http.Owin.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Net.Http.Formatting.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Helpers.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.Http.xml
@@ -141,6 +153,7 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.WebPages.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.WebPages.Deployment.xml
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.Web.WebPages.Razor.xml
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Thinktecture.IdentityModel.Core.pdb
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Unity.Abstractions.pdb
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Unity.Container.pdb
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
@@ -154,19 +167,8 @@ E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Dev
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\fr\System.Web.WebPages.resources.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\fr\System.Web.WebPages.Deployment.resources.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\fr\System.Web.WebPages.Razor.resources.dll
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\obj\Debug\WebApplication.csproj.AssemblyReference.cache
+E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\obj\Debug\WebApplication.dll
 E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\obj\Debug\WebApplication.pdb
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.Jwt.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.OAuth.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.IdentityModel.Tokens.Jwt.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Thinktecture.IdentityModel.Core.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Interface.dll
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Interface.pdb
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\WebApplication.Interface.dll.config
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.xml
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.Jwt.xml
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Microsoft.Owin.Security.OAuth.xml
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\System.IdentityModel.Tokens.Jwt.xml
-E:\ITDevSuccess\Projects\2 - E-commerce site project\e-commerce-site-project\Devs\Back\WebApplication\bin\Thinktecture.IdentityModel.Core.pdb
