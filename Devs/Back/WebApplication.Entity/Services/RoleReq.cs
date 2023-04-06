@@ -10,7 +10,6 @@ namespace WebApplication.Entity.Services
 {
     public class RoleReq
     {
-        [JsonProperty("role")]
         public List<UserRoleEnum> Role { get; set; }
     }
 }

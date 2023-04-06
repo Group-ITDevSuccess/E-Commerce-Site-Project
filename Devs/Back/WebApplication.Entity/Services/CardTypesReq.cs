@@ -10,7 +10,6 @@ namespace WebApplication.Entity.Services
 {
     public class CardTypesReq
     {
-        [JsonProperty("cartypes")]
         public string CardTypes { get; set; }
     }
 }

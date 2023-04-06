@@ -9,7 +9,6 @@ namespace WebApplication.Entity.Services
 {
     public class BrandReq
     {
-        [JsonProperty("brandname")]
         public string BrandName { get; set; }
     }
 }

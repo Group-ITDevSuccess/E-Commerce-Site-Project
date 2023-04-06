@@ -9,21 +9,15 @@ namespace WebApplication.Entity.Services
 {
     public class CardsReq
     {
-        public CardsReq()
+        /*public CardsReq()
         {
             Number = GenerateCardNumber();
-        }
-        [JsonProperty("number")]
-        public string Number { get; set; }
-        [JsonProperty("password")]
-        public string PassWord { get; set; }
-        [JsonProperty("datecreation")]
+        }*/
+        public string Number { get; set; } = GenerateCardNumber();
+        public string PassWord { get; set; } 
         public DateTime DateCreation { get; set; } = DateTime.Now;
-        [JsonProperty("cardtype")]
-        public virtual CardTypes CardType { get; set; }
-        [JsonProperty("agence")]
-        public virtual Agence Agence { get; set; }
-
+        /*public virtual CardTypes CardType { get; set; }
+        public virtual Agence Agence { get; set; }*/
         private static string GenerateCardNumber()
         {
             Random random = new Random();

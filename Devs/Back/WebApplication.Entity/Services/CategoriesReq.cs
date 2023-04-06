@@ -9,9 +9,7 @@ namespace WebApplication.Entity.Services
 {
     public class CategoriesReq
     {
-        [JsonProperty("type")]
         public string Type { get; set; }
-        [JsonProperty("description")]
         public string Description { get; set; }
     }
 }

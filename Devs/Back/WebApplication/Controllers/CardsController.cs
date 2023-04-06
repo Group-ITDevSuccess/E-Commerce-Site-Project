@@ -51,6 +51,7 @@ namespace WebApplication.Controllers
 
             var cards = new Cards
             {
+                Number = cardInput.Number,
                 PassWord = cardInput.PassWord,
                 Agence = specificalAgence
             };

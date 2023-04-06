@@ -9,9 +9,7 @@ namespace WebApplication.Entity.Services
 {
     public class AgenceReq
     {
-        [JsonProperty("name")]
         public string Name { get; set; }
-        [JsonProperty("denomination")]
         public string Denomination { get; set; }
     }
 }
