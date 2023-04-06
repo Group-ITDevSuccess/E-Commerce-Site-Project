@@ -24,7 +24,7 @@ namespace WebApplication.Controllers
             _cardsRepository = cardsRepository;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("api/agences")]
         public async Task<HttpResponseMessage> GetAllAgence()
         {
@@ -52,7 +52,7 @@ namespace WebApplication.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("api/agences/cards")]
         public async Task<HttpResponseMessage> GetCardsByAgenceId([FromUri]Guid idAgence)
         {
@@ -65,8 +65,15 @@ namespace WebApplication.Controllers
             var cards = ((CardsRepository)_cardsRepository).GetByAgenceId(idAgence);
             return Request.CreateResponse(HttpStatusCode.OK, cards);
         }
+/*
+        [HttpPost]
+        [Route("api/agences/update")]
+        public async Task<HttpResponseMessage> UpdateAgence([FromUri] Guid idAgence, [FromBody] AgenceReq agenceInput)
+        {
 
-        [HttpDelete]
+        }*/
+
+        [HttpGet]
         [Route("api/agences/delete")]
         public async Task<HttpResponseMessage> DeleteAgence([FromUri] Guid idAgence)
         {

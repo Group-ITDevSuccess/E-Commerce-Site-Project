@@ -1,9 +1,10 @@
 import { NgModule } from "@angular/core";
+import { UserFormatPipe } from './pipe/user-format.pipe';
 
 @NgModule({
   imports: [],
-  exports: [],
-  declarations: [],
+  exports: [UserFormatPipe],
+  declarations: [UserFormatPipe],
   providers: []
 })
 

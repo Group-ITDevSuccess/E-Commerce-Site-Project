@@ -52,6 +52,7 @@ namespace WebApplication.Controllers
             users.LastName = usersInput.LastName;
             users.Email = usersInput.Email;
             users.PassWord = usersInput.PassWord;
+            users.Genre = usersInput.Genre;
 
             users.Address = new Address
             {
@@ -86,6 +87,17 @@ namespace WebApplication.Controllers
             findUsersId.LastName = usersInput.LastName;
             findUsersId.Email = usersInput.Email;
             findUsersId.PassWord = usersInput.PassWord;
+            findUsersId.Genre = usersInput.Genre;
+
+            findUsersId.Address = new Address
+            {
+                City = usersInput.Address.City,
+                Country = usersInput.Address.Country,
+                Quarter = usersInput.Address.Quarter,
+                Street = usersInput.Address.Street,
+                Batch = usersInput.Address.Batch,
+                PostalCode = usersInput.Address.PostalCode,
+            };
 
             _usersRepository.SaveOrUpdateAsynk(findUsersId);
             return Request.CreateResponse(HttpStatusCode.OK, "Users Mise a Jour !");

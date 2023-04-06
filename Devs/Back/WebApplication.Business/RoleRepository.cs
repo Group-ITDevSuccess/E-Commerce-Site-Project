@@ -11,12 +11,12 @@ namespace WebApplication.Business
 {
     public class RolesRepository : EntityRepository<Role>
     {
-        public Role FindRolesByName(UserRoleEnum Name)
+        public Role FindRolesByName(string Name)
         {
             using (ISession session = NHibernateHelper.GetSessionFactory().OpenSession())
             {
                 return session.Query<Role>().Where(
-                    x => x.Nom == Name).FirstOrDefault();
+                    x => x.Nom.ToString() == Name).FirstOrDefault();
             }
         }
     }

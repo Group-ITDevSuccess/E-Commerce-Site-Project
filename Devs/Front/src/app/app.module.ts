@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app.routing';
 import { AppUserService } from './@core/services/admin/app-user.service';
 import { ApiAppUser } from './services/admin/api-app-user';
 import { ApiService } from './@core/services/api.service';
+import { UserFormatPipe } from './themes/shared/pipe/user-format.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ApiService } from './@core/services/api.service';
     HttpClientModule,
     BrowserModule,
     PagesModule,
-    SharedModule
+    SharedModule,
+
   ],
   providers: [{provide: AppUserService, useClass:  ApiAppUser}, ApiService],
   bootstrap: [AppComponent]
