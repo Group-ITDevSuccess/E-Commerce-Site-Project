@@ -81,6 +81,8 @@ namespace WebApplication.Controllers
                 await _cardsRepository.Delete(card);
             }
 
+            await _agenceRepository.DeleteById(idAgence);
+
             return Request.CreateResponse(HttpStatusCode.OK, $"Tout les cartes associer au Agence {agenceToDelete.Name} sont supprimier");
         }
 
