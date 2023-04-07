@@ -16,8 +16,8 @@ namespace WebApplication.Entity.Mapping
             HasManyToMany(x => x.User)
                 .Cascade.All()
                 .Inverse()
-                .Not.LazyLoad()
-                .Table("UsersRoles");
+                .Table("UsersRoles")
+                .Not.LazyLoad();
         }
     }
 }

@@ -41,11 +41,9 @@ namespace WebApplication.Controllers
         {
             var userSpecific = await _usersRepository.GetById(idUser);
 
-            if (userSpecific == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, $"User introuvable");
+            if (userSpecific == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, "User introuvable");
 
             List<Role> roles = new List<Role>();
-
-            /*userSpecific.Role = new List<Role>();*/
 
             foreach (UserRoleEnum item in roleReq.Role)
             {
@@ -53,6 +51,10 @@ namespace WebApplication.Controllers
                 roles.Add(role);
             }
 
+            /*if (roles[0] == null)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Role introuvable");
+            }*/
             userSpecific.Role = roles;
 
             _usersRepository.SaveOrUpdate(userSpecific);

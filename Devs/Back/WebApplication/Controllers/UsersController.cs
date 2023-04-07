@@ -111,6 +111,7 @@ namespace WebApplication.Controllers
             var findUsersId = await _usersRepository.GetById(idInput);
             if (findUsersId == null) return Request.CreateResponse(HttpStatusCode.NotFound, "Users introuvable, mise ajour impossible !");
 
+            
             await _usersRepository.DeleteById(idInput);
             return Request.CreateResponse(HttpStatusCode.OK, "Users Effacer !");
 
