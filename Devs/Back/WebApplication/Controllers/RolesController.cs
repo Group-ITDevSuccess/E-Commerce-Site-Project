@@ -43,14 +43,17 @@ namespace WebApplication.Controllers
 
             if (userSpecific == null) return Request.CreateErrorResponse(HttpStatusCode.NotFound, $"User introuvable");
 
-            userSpecific.Role = new List<Role>();
+            List<Role> roles = new List<Role>();
+
+            /*userSpecific.Role = new List<Role>();*/
 
             foreach (UserRoleEnum item in roleReq.Role)
             {
-                Role role = ((RolesRepository)_rolesRepository).FindRolesByName(item.ToString());
-                userSpecific.Role.Add(role);
-                var value = userSpecific;
+                Role role = ((RolesRepository)_rolesRepository).FindRolesByName(item);
+                roles.Add(role);
             }
+
+            userSpecific.Role = roles;
 
             _usersRepository.SaveOrUpdate(userSpecific);
             return Request.CreateErrorResponse(HttpStatusCode.OK, "Roles attribuer a au user !");

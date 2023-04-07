@@ -14,10 +14,10 @@ namespace WebApplication.Entity.Mapping
             Abstract();
             Map(x => x.Nom);
             HasManyToMany(x => x.User)
-                .Inverse()
                 .Cascade.All()
-                .Table("UsersRoles")
-                .Not.LazyLoad();
+                .Inverse()
+                .Not.LazyLoad()
+                .Table("UsersRoles");
         }
     }
 }
