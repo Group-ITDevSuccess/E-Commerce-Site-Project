@@ -67,7 +67,7 @@ namespace WebApplication.Controllers
             try
             {
                 _usersRepository.SaveOrUpdate(users);
-                return Request.CreateResponse(HttpStatusCode.Created, "Users enregistré !");
+                return Request.CreateResponse(HttpStatusCode.Created, $"Users enregistré, Id : {users.Id}");
             }
             catch (Exception e)
             {
@@ -100,7 +100,7 @@ namespace WebApplication.Controllers
             };
 
             _usersRepository.SaveOrUpdateAsynk(findUsersId);
-            return Request.CreateResponse(HttpStatusCode.OK, "Users Mise a Jour !");
+            return Request.CreateResponse(HttpStatusCode.OK, $"Users Mise a Jour , on a : {findUsersId}");
         }
 
         [HttpGet]
